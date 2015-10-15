@@ -14,19 +14,63 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+				<div class="home-banner">
+					<div class="banner-content" style="background: url(<?php the_field('banner-image'); ?>) no-repeat;">
+						<?php the_content(); ?>
+						<a href="#" class="request-quote"><?php the_field('button-text'); ?></a>
+					</div>
+				</div>
+				
+				<div class="home-about">
+					<?php the_field('who-we-are'); ?>
+				</div>
+				
+				<div class="locations-section">
+					<h2><?php _e( 'Our Products', '_mbbasetheme' ); ?></h2>
+					<div class="locations-container">
+						<?php
+							$args = array('post_type' => 'locations');
+							$loop = new WP_Query( $args );
+							while ( $loop->have_posts() ) : $loop->the_post();
+						?>
+							<div class="location-single">
+								<div class="location-img">
+									<img src="<?php the_field('image'); ?>" alt="<?php the_field('name'); ?>">
+								</div>
+								<h2><?php the_field('name'); ?></h2>
+								<p class="description">
+									<?php the_field('description'); ?>
+								</p>
+								<a href="#" class="show-all-products">
+									<?php the_field('button-text'); ?>
+								</a>
+							</div><!-- .location-single -->
+						<?php
+							endwhile;
+							wp_reset_postdata();
+						?>
+					</div><!-- .locations-container -->
+				</div><!-- .locations-section -->
+				
+				<div class="home-gallery">
+					<?php the_field('home-gallery'); ?>
+				</div>
+				
+				<div class="testimonials-section">
+					<h2><?php _e( 'Testimonials', '_mbbasetheme' ); ?></h2>
+				</div>
+				
+				<div class="videos-section">
+					<h2><?php _e( 'Videos', '_mbbasetheme' ); ?></h2>
+				</div>
+				
+				<div class="quote-section">
+					
+				</div>
 
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
