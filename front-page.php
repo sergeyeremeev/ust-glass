@@ -24,34 +24,38 @@ get_header(); ?>
 				</div>
 				
 				<div class="home-about">
-					<?php the_field('who_we_are'); ?>
+					<div class="container">
+						<?php the_field('who_we_are'); ?>
+					</div>
 				</div>
 				
 				<div class="locations-section">
-					<h2><?php _e( 'Our Products', '_mbbasetheme' ); ?></h2>
-					<div class="locations-container">
-						<?php
-							$args = array('post_type' => 'locations');
-							$loop = new WP_Query( $args );
-							while ( $loop->have_posts() ) : $loop->the_post();
-						?>
-							<div class="location-single">
-								<div class="location-img">
-									<img src="<?php the_field('image'); ?>" alt="<?php the_field('name'); ?>">
-								</div>
-								<h2><?php the_field('name'); ?></h2>
-								<p class="description">
-									<?php the_field('description'); ?>
-								</p>
-								<a href="#" class="show-all-products">
-									<?php the_field('button-text'); ?>
-								</a>
-							</div><!-- .location-single -->
-						<?php
-							endwhile;
-							wp_reset_postdata();
-						?>
-					</div><!-- .locations-container -->
+					<div class="container">
+						<h2><?php _e( 'Our Products', '_mbbasetheme' ); ?></h2>
+						<div class="locations-container">
+							<?php
+								$args = array('post_type' => 'locations', 'order' => 'asc');
+								$loop = new WP_Query( $args );
+								while ( $loop->have_posts() ) : $loop->the_post();
+							?>
+								<div class="location-single">
+									<div class="location-img">
+										<img src="<?php the_field('home_page_image'); ?>" alt="<?php the_title(); ?>">
+									</div>
+									<h2><?php the_title(); ?></h2>
+									<div class="location-description">
+										<?php the_field('home_page_description'); ?>
+									</div>
+									<a href="<?php the_permalink(); ?>" class="show-all-products">
+										<?php _e( 'Show All Products', '_mbbasetheme' ); ?>
+									</a>
+								</div><!-- .location-single -->
+							<?php
+								endwhile;
+								wp_reset_postdata();
+							?>
+						</div><!-- .locations-container -->
+					</div>
 				</div><!-- .locations-section -->
 				
 				<div class="home-gallery">

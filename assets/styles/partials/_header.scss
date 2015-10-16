@@ -42,12 +42,12 @@ body {
                 color: #fff;
                 
                 &:hover {
-                    background: #008bc3;
+                    background: $blue;
                 }
             }
             
             &.current-menu-item a {
-                background: #008bc3;
+                background: $blue;
             }
             
             &:first-child a {
