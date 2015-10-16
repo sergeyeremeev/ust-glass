@@ -34,10 +34,10 @@
 						$loop = new WP_Query( $args );
 						while ( $loop->have_posts() ) : $loop->the_post();
 					?>
-						<li><a href="<?php the_field('facebook')"></a></li>
-						<li><a href="<?php the_field('twitter')"></a></li>
-						<li><a href="<?php the_field('google-plus')"></a></li>
-						<li><a href="<?php the_field('youtube')"></a></li>
+						<li><a href="<?php the_field('facebook'); ?>"></a></li>
+						<li><a href="<?php the_field('twitter'); ?>"></a></li>
+						<li><a href="<?php the_field('google-plus'); ?>"></a></li>
+						<li><a href="<?php the_field('youtube'); ?>"></a></li>
 					<?php
 						endwhile;
 						wp_reset_postdata();

@@ -26,17 +26,25 @@
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_mbbasetheme' ); ?></a>
 
     <header id="masthead" class="site-header" role="banner">
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle"><?php _e( 'Primary Menu', '_mbbasetheme' ); ?></button>
-            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-        </nav><!-- #site-navigation -->
-
-        <div class="site-branding">
-            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo"></span><?php bloginfo( 'name' ); ?></a></h1>
-        </div>
-        <div class="header-search">
-            <?php get_search_form(); ?>
-        </div>
+        <div class="header-top">
+            <div class="container">
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <button class="menu-toggle"><?php _e( 'Primary Menu', '_mbbasetheme' ); ?></button>
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                </nav><!-- #site-navigation -->
+            </div>
+        </div><!-- .header-top -->
+        
+        <div class="header-bottom">
+            <div class="container">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo"></span><?php bloginfo( 'name' ); ?></a></h1>
+                </div>
+                <div class="header-search">
+                    <?php get_search_form(); ?>
+                </div>
+            </div>
+        </div><!-- .header-bottom -->
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">

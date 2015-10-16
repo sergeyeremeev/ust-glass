@@ -39,6 +39,14 @@ This theme, like WordPress, is licensed under the GPL.
 /* ==========================================================================
    Variables
    ========================================================================== */
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: auto;
+  height: 100%;
+}
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -460,12 +468,12 @@ html {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: orange;
+  background: #ffc322;
   text-shadow: none;
 }
 
 ::selection {
-  background: orange;
+  background: #ffc322;
   text-shadow: none;
 }
 
@@ -533,6 +541,10 @@ textarea {
 /* ==========================================================================
    Links
    ========================================================================== */
+a {
+  text-decoration: none;
+}
+
 a,
 a:visited {
   color: red;
@@ -666,6 +678,10 @@ address {
   display: block;
 }
 
+@font-face {
+  font-family: 'WebSymbols';
+  src: url("assets/fonts/WebSymbols-Regular.otf");
+}
 /* ==========================================================================
    Grid
    ========================================================================== */
@@ -737,18 +753,18 @@ address {
    Layout
    ========================================================================== */
 #page {
-  max-width: 1000px;
-  margin: 20px auto;
+  max-width: 100%;
+  margin: 0;
 }
 
 .content-area {
-  float: left;
-  margin: 0 -25% 0 0;
+  float: none;
+  margin: 0;
   width: 100%;
 }
 
 .site-main {
-  margin: 0 25% 0 0;
+  margin: 0;
 }
 
 .site-content .widget-area {
@@ -765,6 +781,151 @@ address {
 /* ==========================================================================
    Header
    ========================================================================== */
+body {
+  padding-top: 112px;
+}
+
+.admin-bar .header-top {
+  top: 32px;
+}
+
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  height: 72px;
+  background: rgba(50, 50, 50, 0.5);
+  margin-bottom: 40px;
+}
+.header-top ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header-top ul li {
+  height: 100%;
+  width: -webkit-calc(100% / 6);
+  width: calc(100% / 6);
+  text-align: center;
+}
+.header-top ul li a {
+  display: inline-block;
+  line-height: 72px;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.header-top ul li a:hover {
+  background: #008bc3;
+}
+.header-top ul li.current-menu-item a {
+  background: #008bc3;
+}
+.header-top ul li:first-child a {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-bottom {
+  position: relative;
+  z-index: 98;
+}
+.header-bottom .site-branding {
+  float: left;
+}
+.header-bottom .header-search {
+  float: right;
+}
+.header-bottom .site-title {
+  margin: 0;
+}
+.header-bottom .site-title a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #c3c3c3;
+}
+.header-bottom .site-title .logo {
+  display: inline-block;
+  width: 84px;
+  height: 83px;
+  background: url(assets/images/logo.png) no-repeat;
+  margin-right: 15px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .header-bottom .site-title .logo {
+    background: url(assets/images/logo_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .header-bottom .site-title .logo {
+    background: url(assets/images/logo_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+.header-bottom .search-form {
+  width: 310px;
+  height: 40px;
+  position: relative;
+  top: 20px;
+}
+.header-bottom .search-form input[type="submit"] {
+  display: none;
+}
+.header-bottom .search-form input[type="search"] {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 1px solid #8c8c8c;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #fff;
+}
+.header-bottom .search-form input[type="search"]:focus {
+  outline: none;
+  border: 1px solid #fff;
+}
+.header-bottom .search-form label {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.header-bottom .search-form label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  background: url(assets/images/search-icon.png) no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .header-bottom .search-form label:after {
+    background: url(assets/images/search-icon_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .header-bottom .search-form label:after {
+    background: url(assets/images/search-icon_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -937,6 +1098,59 @@ object {
 /* ==========================================================================
    Home Page Template
    ========================================================================== */
+.home-banner {
+  height: 680px;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+  top: -195px;
+  padding-top: 260px;
+}
+.home-banner .banner-content h2 {
+  margin: 0 0 30px;
+  line-height: 1;
+  font-size: 60px;
+  color: #fff;
+}
+.home-banner .banner-content ul {
+  margin: 0 0 25px;
+  padding: 0 0 0 30px;
+  color: #fff;
+  font-size: 22px;
+  list-style-type: none;
+  line-height: 1.8;
+}
+.home-banner .banner-content ul li {
+  position: relative;
+}
+.home-banner .banner-content ul li:before {
+  content: '.';
+  font-family: WebSymbols;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  left: -30px;
+  top: 6px;
+}
+.home-banner .banner-content .request-quote {
+  display: inline-block;
+  width: 300px;
+  height: 74px;
+  line-height: 74px;
+  border-radius: 5px;
+  background: #ffba00;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 1, 0.2);
+}
+.home-banner .banner-content .request-quote:hover {
+  background: #ffc322;
+}
+
 /* ==========================================================================
    Blog pages
    ========================================================================== */

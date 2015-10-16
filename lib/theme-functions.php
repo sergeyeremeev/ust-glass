@@ -116,3 +116,14 @@ function mb_remove_more_jump_link( $link ) {
 	}
 	return $link;
 }
+
+/**
+ * Add Fonts
+ */
+function wpb_add_fonts() {
+    wp_register_style('wpb-googleFonts1', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+    wp_enqueue_style( 'wpb-googleFonts1');
+	wp_register_style('wpb-googleFonts2', 'http://fonts.googleapis.com/css?family=Merriweather:300italic');
+    wp_enqueue_style( 'wpb-googleFonts2');
+}
+add_action('wp_print_styles', 'wpb_add_fonts');

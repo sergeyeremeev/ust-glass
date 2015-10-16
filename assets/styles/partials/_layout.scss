@@ -4,17 +4,17 @@
 
 #page {
 	max-width: $pageWidth;
-	margin: 20px auto;
+	margin: 0;
 }
 
 .content-area {
-	float: left;
-	margin: 0 -25% 0 0;
+	float: none;
+	margin: 0;
 	width: 100%;
 }
 
 .site-main {
-	margin: 0 25% 0 0;
+	margin: 0;
 }
 
 .site-content .widget-area {

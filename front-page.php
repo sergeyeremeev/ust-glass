@@ -14,15 +14,17 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="home-banner">
-					<div class="banner-content" style="background: url(<?php the_field('banner-image'); ?>) no-repeat;">
-						<?php the_content(); ?>
-						<a href="#" class="request-quote"><?php the_field('button-text'); ?></a>
+				<div class="home-banner" style="background: url(<?php the_field('banner_image'); ?>) no-repeat;">
+					<div class="container">
+						<div class="banner-content">
+							<?php the_content(); ?>
+							<a href="#" class="request-quote"><?php the_field('button_text'); ?></a>
+						</div>
 					</div>
 				</div>
 				
 				<div class="home-about">
-					<?php the_field('who-we-are'); ?>
+					<?php the_field('who_we_are'); ?>
 				</div>
 				
 				<div class="locations-section">

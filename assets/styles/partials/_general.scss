@@ -22,6 +22,10 @@ body { }
    Links
    ========================================================================== */
 
+a {
+	text-decoration: none;
+}
+
 a,
 a:visited {
 	color: $red;
@@ -161,4 +165,10 @@ address {
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer {
 	display: block;
+}
+
+// Websymbols font
+@font-face {
+	font-family: 'WebSymbols';
+	src: url('assets/fonts/WebSymbols-Regular.otf');
 }
