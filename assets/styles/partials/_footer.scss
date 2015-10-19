@@ -3,4 +3,384 @@
    ========================================================================== */
 
 .site-footer {
+    background: #404040;
+    padding-top: 50px;
+    
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 33.3%;
+        float: left;
+        padding: 0;
+    }
+    
+    h3 {
+        color: #fff;
+        margin: 0 0 15px;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: #a6a6a6;
+        font-size: 14px;
+        
+        li {
+            line-height: 2;
+            
+            a {
+                color: inherit;
+                
+                &:hover {
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+    .col-3 {
+        position: relative;
+        
+        h3 {
+            margin-bottom: 22px;
+        }
+        
+        .mail {
+            display: inline-block;
+            float: right;
+            width: 33px;
+            height: 19px;
+            background: url(assets/images/icon-mail.png) no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+            
+            @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                only screen and (   min--moz-device-pixel-ratio: 1.5),
+                only screen and (     -o-min-device-pixel-ratio: 3/2),
+                only screen and (        min-device-pixel-ratio: 1.5),
+                only screen and (min-resolution: 192dpi) {
+                    background: url(assets/images/icon-mail_2x.png) no-repeat;
+                    background-size: 100%;
+                }
+
+            @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                only screen and (   min--moz-device-pixel-ratio: 1.5),
+                only screen and (     -o-min-device-pixel-ratio: 3/2),
+                only screen and (        min-device-pixel-ratio: 1.5),
+                only screen and (min-resolution: 192dpi) {
+                    background: url(assets/images/icon-mail_3x.png) no-repeat;
+                    background-size: 100%;
+                }
+        }
+        
+        p {
+            font-size: 14px;
+            color: #a6a6a6;
+            line-height: 1.2;
+            margin: 0 0 20px;
+        }
+        
+        form {
+            width: 100%;
+            
+            & > p {
+                width: 100%;
+                margin: 0 0 10px;
+                
+                span {
+                    width: 100%;
+                    display: inline-block;
+                }
+            }
+            
+            input {
+                width: 100%;
+                border: 0;
+                background: #fff;
+                padding-left: 20px;
+                height: 46px;
+                color: $blue;
+                font-size: 14px;
+                
+                &::-webkit-input-placeholder {
+                    font-size: 14px;
+                    color: #a6a6a6;
+                    font-style: italic;
+                }
+    
+                &:-moz-placeholder {
+                    font-size: 14px;
+                    color: #a6a6a6;
+                    font-style: italic;
+                }
+    
+                &::-moz-placeholder {
+                    font-size: 14px;
+                    color: #a6a6a6;
+                    font-style: italic;
+                }
+    
+                &:-ms-input-placeholder {
+                    font-size: 14px;
+                    color: #a6a6a6;
+                    font-style: italic;
+                }
+                
+                &[type="submit"] {
+                    background: $darkBlue;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #fff;
+                    
+                    &:hover {
+                        background: $lightBlue;
+                    }
+                }
+                
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+.footer-main .container {
+    padding: 0 0 20px;
+    max-width: 940px;
+    border-bottom: 1px solid #535353;
+}
+
+.footer-bottom {
+    height: 66px;
+    
+    .copyright {
+        height: 100%;
+        line-height: 66px;
+        margin: 0;
+        float: left;
+        font-size: 12px;
+        color: #a6a6a6;
+    }
+    
+    .footer-social {
+        float: right;
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 23px;
+            
+            li {
+                float: left;
+                position: relative;
+                margin-right: 40px;
+                height: 17px;
+                display: flex;
+                align-items: center;
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            
+            a {
+                display: inline-block;
+            }
+            
+            .fb {
+                width: 8px;
+                height: 17px;
+                background: url(assets/images/fb.png) no-repeat;
+                
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/fb_2x.png) no-repeat;
+                        background-size: 100%;
+                    }
+        
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/fb_3x.png) no-repeat;
+                        background-size: 100%;
+                    }
+                
+                &:hover {
+                    background: url(assets/images/fb_hover.png) no-repeat;
+                    
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/fb_hover_2x.png) no-repeat;
+                            background-size: 100%;
+                        }
+            
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/fb_hover_3x.png) no-repeat;
+                            background-size: 100%;
+                        }
+                }
+            }
+            
+            .twit {
+                width: 17px;
+                height: 14px;
+                background: url(assets/images/twit.png) no-repeat;
+                
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/twit_2x.png) no-repeat;
+                        background-size: 100%;
+                    }
+        
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/twit_3x.png) no-repeat;
+                        background-size: 100%;
+                    }
+                
+                &:hover {
+                    background: url(assets/images/twit_hover.png) no-repeat;
+                    
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/twit_hover_2x.png) no-repeat;
+                            background-size: 100%;
+                        }
+            
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/twit_hover_3x.png) no-repeat;
+                            background-size: 100%;
+                        }
+                }
+            }
+            
+            .google {
+                width: 19px;
+                height: 16px;
+                background: url(assets/images/google.png) no-repeat;
+                
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/google_2x.png) no-repeat;
+                        background-size: 100%;
+                    }
+        
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/google_3x.png) no-repeat;
+                        background-size: 100%;
+                    }
+                
+                &:hover {
+                    background: url(assets/images/google_hover.png) no-repeat;
+                    
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/google_hover_2x.png) no-repeat;
+                            background-size: 100%;
+                        }
+            
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/google_hover_3x.png) no-repeat;
+                            background-size: 100%;
+                        }
+                }
+            }
+            
+            .youtube {
+                width: 20px;
+                height: 15px;
+                background: url(assets/images/youtube.png) no-repeat;
+                
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/youtube_2x.png) no-repeat;
+                        background-size: 100%;
+                    }
+        
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/youtube_3x.png) no-repeat;
+                        background-size: 100%;
+                    }
+                
+                &:hover {
+                    background: url(assets/images/youtube_hover.png) no-repeat;
+                    
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/youtube_hover_2x.png) no-repeat;
+                            background-size: 100%;
+                        }
+            
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/youtube_hover_3x.png) no-repeat;
+                            background-size: 100%;
+                        }
+                }
+            }
+        }
+    }
 }

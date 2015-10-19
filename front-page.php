@@ -59,19 +59,52 @@ get_header(); ?>
 				</div><!-- .locations-section -->
 				
 				<div class="home-gallery">
-					<?php the_field('home-gallery'); ?>
+					<?php the_field('home_gallery'); ?>
 				</div>
 				
 				<div class="testimonials-section">
-					<h2><?php _e( 'Testimonials', '_mbbasetheme' ); ?></h2>
+					<div class="container">
+						<h2><?php _e( 'Testimonials', '_mbbasetheme' ); ?></h2>
+						<div class="testimonials-container">
+							<?php
+								$args = array('post_type' => 'testimonials');
+								$loop = new WP_Query( $args );
+								while ( $loop->have_posts() ) : $loop->the_post();
+							?>
+								<div class="testimonial-container">
+									<div class="testimonial-content">
+										<?php the_content(); ?>
+									</div>
+									<div class="testimonial-author-image">
+										<img src="<?php the_field('image'); ?>" alt="<?php the_title(); ?>">
+									</div>
+									<div class="testimonial-author-name">
+										<?php the_title(); ?>
+									</div>
+									<div class="testimonial-author-location">
+										<?php the_field('location'); ?>
+									</div>
+								</div>
+							<?php
+								endwhile;
+								wp_reset_postdata();
+							?>
+						</div>
+					</div>
 				</div>
 				
 				<div class="videos-section">
-					<h2><?php _e( 'Videos', '_mbbasetheme' ); ?></h2>
+					<div class="container">
+						<h2><?php _e( 'Videos', '_mbbasetheme' ); ?></h2>
+					</div>
 				</div>
 				
 				<div class="quote-section">
-					
+					<div class="container">
+						<h2><?php _e( 'Get a Quote', '_mbbasetheme' ); ?></h2>
+						<i class="icon-envelope"></i>
+						<?php the_field('contact_form_code'); ?>
+					</div>
 				</div>
 
 			<?php endwhile; // end of the loop. ?>
