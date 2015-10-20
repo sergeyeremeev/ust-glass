@@ -212,3 +212,76 @@ address {
 input {
 	-webkit-appearance: none !important;
 }
+
+.mejs-overlay-button {
+	width: 116px !important;
+	height: 116px !important;
+	margin: -58px 0 0 -58px !important;
+	background: url(assets/images/play_btn.png) no-repeat !important;
+	background-size: 100% !important;
+	
+	@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+		only screen and (   min--moz-device-pixel-ratio: 1.5),
+		only screen and (     -o-min-device-pixel-ratio: 3/2),
+		only screen and (        min-device-pixel-ratio: 1.5),
+		only screen and (min-resolution: 192dpi) {
+			background: url(assets/images/play_btn_2x.png) no-repeat !important;
+			background-size: 100% !important;
+		}
+
+	@media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+		only screen and (   min--moz-device-pixel-ratio: 2.5),
+		only screen and (     -o-min-device-pixel-ratio: 5/2),
+		only screen and (        min-device-pixel-ratio: 2.5),
+		only screen and (min-resolution: 192dpi) {
+			background: url(assets/images/play_btn_3x.png) no-repeat !important;
+			background-size: 100% !important;
+		}
+}
+
+@media only screen and (max-width: 767px) {
+	.mejs-overlay-button {
+		width: 63px !important;
+		height: 63px !important;
+		margin: -31px 0 0 -31px !important;
+		background: url(assets/images/play_btn.png) no-repeat !important;
+		background-size: 100% !important;
+		
+		@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+			only screen and (   min--moz-device-pixel-ratio: 1.5),
+			only screen and (     -o-min-device-pixel-ratio: 3/2),
+			only screen and (        min-device-pixel-ratio: 1.5),
+			only screen and (min-resolution: 192dpi) {
+				background: url(assets/images/play_btn_2x.png) no-repeat !important;
+				background-size: 100% !important;
+			}
+	
+		@media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+			only screen and (   min--moz-device-pixel-ratio: 2.5),
+			only screen and (     -o-min-device-pixel-ratio: 5/2),
+			only screen and (        min-device-pixel-ratio: 2.5),
+			only screen and (min-resolution: 192dpi) {
+				background: url(assets/images/play_btn_2x.png) no-repeat !important;
+				background-size: 100% !important;
+			}
+	}
+}
+
+.mejs-controls {
+	background: rgba(0, 0, 0, 0.5) !important;
+	height: 42px !important;
+}
+
+.mejs-currenttime-container {
+	display: none !important;
+}
+
+.mejs-duration-container {
+	float: right !important;
+	margin-right: 20px !important;
+	padding-top: 16px !important;
+}
+
+.mejs-button {
+	display: none !important;
+}

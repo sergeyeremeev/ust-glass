@@ -947,6 +947,67 @@ input {
   -webkit-appearance: none !important;
 }
 
+.mejs-overlay-button {
+  width: 116px !important;
+  height: 116px !important;
+  margin: -58px 0 0 -58px !important;
+  background: url(assets/images/play_btn.png) no-repeat !important;
+  background-size: 100% !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .mejs-overlay-button {
+    background: url(assets/images/play_btn_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .mejs-overlay-button {
+    background: url(assets/images/play_btn_3x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mejs-overlay-button {
+    width: 63px !important;
+    height: 63px !important;
+    margin: -31px 0 0 -31px !important;
+    background: url(assets/images/play_btn.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .mejs-overlay-button {
+    background: url(assets/images/play_btn_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .mejs-overlay-button {
+    background: url(assets/images/play_btn_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+
+.mejs-controls {
+  background: rgba(0, 0, 0, 0.5) !important;
+  height: 42px !important;
+}
+
+.mejs-currenttime-container {
+  display: none !important;
+}
+
+.mejs-duration-container {
+  float: right !important;
+  margin-right: 20px !important;
+  padding-top: 16px !important;
+}
+
+.mejs-button {
+  display: none !important;
+}
+
 /* ==========================================================================
    Grid
    ========================================================================== */
@@ -1138,7 +1199,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .header-bottom .site-title .logo {
     background: url(assets/images/logo_3x.png) no-repeat;
     background-size: 100%;
@@ -1187,7 +1248,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .header-bottom .search-form label:after {
     background: url(assets/images/search-icon_3x.png) no-repeat;
     background-size: 100%;
@@ -1205,6 +1266,11 @@ body {
 
   .header-top .container {
     padding: 0;
+  }
+
+  .header-bottom {
+    position: relative;
+    top: -15px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1365,7 +1431,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-top .header-social ul .fb {
     background: url(assets/images/fb_3x.png) no-repeat;
     background-size: 100%;
@@ -1382,7 +1448,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-top .header-social ul .fb:hover {
     background: url(assets/images/fb_hover_3x.png) no-repeat;
     background-size: 100%;
@@ -1401,7 +1467,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-top .header-social ul .twit {
     background: url(assets/images/twit_3x.png) no-repeat;
     background-size: 100%;
@@ -1418,7 +1484,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-top .header-social ul .twit:hover {
     background: url(assets/images/twit_hover_3x.png) no-repeat;
     background-size: 100%;
@@ -1437,7 +1503,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-top .header-social ul .google {
     background: url(assets/images/google_3x.png) no-repeat;
     background-size: 100%;
@@ -1454,7 +1520,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-top .header-social ul .google:hover {
     background: url(assets/images/google_hover_3x.png) no-repeat;
     background-size: 100%;
@@ -1473,7 +1539,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-top .header-social ul .youtube {
     background: url(assets/images/youtube_3x.png) no-repeat;
     background-size: 100%;
@@ -1490,7 +1556,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-top .header-social ul .youtube:hover {
     background: url(assets/images/youtube_hover_3x.png) no-repeat;
     background-size: 100%;
@@ -1499,6 +1565,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .header-bottom {
+    top: 0;
     height: 72px;
     float: right;
     width: 50%;
@@ -1534,7 +1601,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-bottom .site-title .logo {
     background: url(assets/images/logo_2x.png) no-repeat;
     background-size: 100%;
@@ -1555,7 +1622,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-bottom .header-search .toggle-search {
     background: url(assets/images/zoom-icon.png) no-repeat;
     background-size: 100%;
@@ -1630,7 +1697,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .site-footer .col-3 .mail {
     background: url(assets/images/icon-mail_3x.png) no-repeat;
     background-size: 100%;
@@ -1756,7 +1823,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .footer-bottom .footer-social ul .fb {
     background: url(assets/images/fb_3x.png) no-repeat;
     background-size: 100%;
@@ -1771,7 +1838,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .footer-bottom .footer-social ul .fb:hover {
     background: url(assets/images/fb_hover_3x.png) no-repeat;
     background-size: 100%;
@@ -1788,7 +1855,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .footer-bottom .footer-social ul .twit {
     background: url(assets/images/twit_3x.png) no-repeat;
     background-size: 100%;
@@ -1803,7 +1870,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .footer-bottom .footer-social ul .twit:hover {
     background: url(assets/images/twit_hover_3x.png) no-repeat;
     background-size: 100%;
@@ -1820,7 +1887,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .footer-bottom .footer-social ul .google {
     background: url(assets/images/google_3x.png) no-repeat;
     background-size: 100%;
@@ -1835,7 +1902,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .footer-bottom .footer-social ul .google:hover {
     background: url(assets/images/google_hover_3x.png) no-repeat;
     background-size: 100%;
@@ -1852,7 +1919,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .footer-bottom .footer-social ul .youtube {
     background: url(assets/images/youtube_3x.png) no-repeat;
     background-size: 100%;
@@ -1867,7 +1934,7 @@ body {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .footer-bottom .footer-social ul .youtube:hover {
     background: url(assets/images/youtube_hover_3x.png) no-repeat;
     background-size: 100%;
@@ -2253,7 +2320,7 @@ object {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .home-gallery .gallery-item a:hover:after {
     background: url(assets/images/zoom-icon_3x.png) no-repeat;
     background-size: 100%;
@@ -2373,7 +2440,7 @@ object {
     background-size: 100%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .quote-section .icon-envelope {
     background: url(assets/images/envelope_3x.png) no-repeat;
     background-size: 100%;
@@ -2597,7 +2664,7 @@ object {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .home-gallery .gallery-item a:hover:after {
     background: url(assets/images/zoom-icon_2x.png) no-repeat;
     background-size: 100%;
@@ -2660,7 +2727,7 @@ object {
     background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .quote-section .icon-envelope {
     background: url(assets/images/envelope_2x.png) no-repeat;
     background-size: 100%;
@@ -2723,6 +2790,235 @@ object {
 /* ==========================================================================
    Blog pages
    ========================================================================== */
+.top-banner {
+  height: 220px;
+  position: relative;
+  top: -195px;
+  margin-bottom: -195px;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.about-banner {
+  background: url(assets/images/about-banner.jpg);
+}
+
+.breadcrumbs {
+  height: 42px;
+  line-height: 38px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.breadcrumbs a {
+  font-family: Arial;
+  font-size: 12px;
+  color: #666;
+}
+.breadcrumbs a:hover, .breadcrumbs a.current {
+  color: #008bc3;
+  font-weight: 700;
+}
+.breadcrumbs .home {
+  display: inline-block;
+  position: relative;
+  padding-right: 30px;
+}
+.breadcrumbs .home:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  border-style: solid;
+  border-width: 4px 0 4px 4px;
+  border-color: transparent transparent transparent #bfbfbf;
+}
+
+.about-us-content {
+  padding: 60px 0;
+}
+.about-us-content .about-us-top {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.about-us-content .about-us-top:before, .about-us-content .about-us-top:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.about-us-content .about-us-top:after {
+  clear: both;
+}
+.about-us-content .about-us-bottom {
+  padding: 60px 0 20px;
+}
+.about-us-content .about-us-bottom:before, .about-us-content .about-us-bottom:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.about-us-content .about-us-bottom:after {
+  clear: both;
+}
+.about-us-content h1 {
+  font-size: 40px;
+  color: #242021;
+  margin: 0 0 20px;
+}
+.about-us-content .left-col {
+  width: 50%;
+  float: left;
+  padding-right: 22px;
+}
+.about-us-content .right-col {
+  width: 50%;
+  float: left;
+  padding-left: 22px;
+}
+.about-us-content .about-us-bottom p {
+  color: #666;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.about-us-content .about-us-bottom p:nth-of-type(2) {
+  max-height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+.about-us-content img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.about-us-content .get-a-quote {
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  background: #ffba00;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 1, 0.2);
+}
+.about-us-content .get-a-quote:hover {
+  background: #ffc322;
+}
+.about-us-content h2 {
+  font-size: 26px;
+  color: #242021;
+  margin: 10px 0 35px;
+}
+.about-us-content .contact-us {
+  display: inline-block;
+  width: 120px;
+  height: 42px;
+  line-height: 42px;
+  background: #e6e6e6;
+  text-align: center;
+  color: #008bc3;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 1, 0.2);
+}
+.about-us-content .contact-us:hover {
+  background: #008bc3;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .top-banner {
+    top: -207px;
+    margin-bottom: -207px;
+  }
+
+  .about-us-content {
+    padding-top: 40px;
+  }
+  .about-us-content .about-us-top {
+    padding-bottom: 0;
+  }
+  .about-us-content .about-us-top .left-col,
+  .about-us-content .about-us-top .right-col {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .about-us-content .about-us-bottom {
+    padding-top: 20px;
+  }
+  .about-us-content .about-us-bottom p:nth-of-type(2) {
+    max-height: 190px;
+  }
+}
+@media only screen and (width: 768px) {
+  .about-banner {
+    background: url(assets/images/about-banner_m.jpg);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumbs {
+    display: none;
+  }
+
+  .top-banner {
+    height: 164px;
+    top: -72px;
+    margin-bottom: -134px;
+    z-index: -1;
+  }
+
+  .about-us-content {
+    padding: 0;
+  }
+  .about-us-content .about-us-top {
+    padding-bottom: 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .about-us-content .about-us-bottom {
+    padding: 30px 0 20px;
+  }
+  .about-us-content h1 {
+    font-size: 34px;
+    margin: 0 0 50px;
+    color: #fff;
+  }
+  .about-us-content p {
+    font-size: 14px;
+  }
+  .about-us-content .left-col,
+  .about-us-content .right-col {
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .about-us-content .about-us-bottom p {
+    font-size: 14px;
+  }
+  .about-us-content .about-us-bottom p:nth-of-type(2) {
+    max-height: 250px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .about-us-content .get-a-quote {
+    width: 100%;
+  }
+  .about-us-content h2 {
+    font-size: 20px;
+    margin: 10px 0 20px;
+  }
+}
 /* ==========================================================================
    Widgets
    ========================================================================== */

@@ -100,10 +100,10 @@ body {
                     background-size: 100%;
                 }
 
-            @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                only screen and (   min--moz-device-pixel-ratio: 1.5),
-                only screen and (     -o-min-device-pixel-ratio: 3/2),
-                only screen and (        min-device-pixel-ratio: 1.5),
+            @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                only screen and (   min--moz-device-pixel-ratio: 2.5),
+                only screen and (     -o-min-device-pixel-ratio: 5/2),
+                only screen and (        min-device-pixel-ratio: 2.5),
                 only screen and (min-resolution: 192dpi) {
                     background: url(assets/images/logo_3x.png) no-repeat;
                     background-size: 100%;
@@ -160,10 +160,10 @@ body {
                         background-size: 100%;
                     }
     
-                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                    only screen and (   min--moz-device-pixel-ratio: 1.5),
-                    only screen and (     -o-min-device-pixel-ratio: 3/2),
-                    only screen and (        min-device-pixel-ratio: 1.5),
+                @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                    only screen and (   min--moz-device-pixel-ratio: 2.5),
+                    only screen and (     -o-min-device-pixel-ratio: 5/2),
+                    only screen and (        min-device-pixel-ratio: 2.5),
                     only screen and (min-resolution: 192dpi) {
                         background: url(assets/images/search-icon_3x.png) no-repeat;
                         background-size: 100%;
@@ -188,6 +188,11 @@ body {
         .container {
             padding: 0;
         }
+    }
+    
+    .header-bottom {
+        position: relative;
+        top: -15px;
     }
 }
 
@@ -359,10 +364,10 @@ body {
                         background-size: 100%;
                     }
         
-                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                    only screen and (   min--moz-device-pixel-ratio: 1.5),
-                    only screen and (     -o-min-device-pixel-ratio: 3/2),
-                    only screen and (        min-device-pixel-ratio: 1.5),
+                @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                    only screen and (   min--moz-device-pixel-ratio: 2.5),
+                    only screen and (     -o-min-device-pixel-ratio: 5/2),
+                    only screen and (        min-device-pixel-ratio: 2.5),
                     only screen and (min-resolution: 192dpi) {
                         background: url(assets/images/fb_3x.png) no-repeat;
                         background-size: 100%;
@@ -380,10 +385,10 @@ body {
                             background-size: 100%;
                         }
             
-                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                        only screen and (   min--moz-device-pixel-ratio: 1.5),
-                        only screen and (     -o-min-device-pixel-ratio: 3/2),
-                        only screen and (        min-device-pixel-ratio: 1.5),
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                        only screen and (   min--moz-device-pixel-ratio: 2.5),
+                        only screen and (     -o-min-device-pixel-ratio: 5/2),
+                        only screen and (        min-device-pixel-ratio: 2.5),
                         only screen and (min-resolution: 192dpi) {
                             background: url(assets/images/fb_hover_3x.png) no-repeat;
                             background-size: 100%;
@@ -405,10 +410,10 @@ body {
                         background-size: 100%;
                     }
         
-                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                    only screen and (   min--moz-device-pixel-ratio: 1.5),
-                    only screen and (     -o-min-device-pixel-ratio: 3/2),
-                    only screen and (        min-device-pixel-ratio: 1.5),
+                @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                    only screen and (   min--moz-device-pixel-ratio: 2.5),
+                    only screen and (     -o-min-device-pixel-ratio: 5/2),
+                    only screen and (        min-device-pixel-ratio: 2.5),
                     only screen and (min-resolution: 192dpi) {
                         background: url(assets/images/twit_3x.png) no-repeat;
                         background-size: 100%;
@@ -426,10 +431,10 @@ body {
                             background-size: 100%;
                         }
             
-                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                        only screen and (   min--moz-device-pixel-ratio: 1.5),
-                        only screen and (     -o-min-device-pixel-ratio: 3/2),
-                        only screen and (        min-device-pixel-ratio: 1.5),
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                        only screen and (   min--moz-device-pixel-ratio: 2.5),
+                        only screen and (     -o-min-device-pixel-ratio: 5/2),
+                        only screen and (        min-device-pixel-ratio: 2.5),
                         only screen and (min-resolution: 192dpi) {
                             background: url(assets/images/twit_hover_3x.png) no-repeat;
                             background-size: 100%;
@@ -451,10 +456,10 @@ body {
                         background-size: 100%;
                     }
         
-                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                    only screen and (   min--moz-device-pixel-ratio: 1.5),
-                    only screen and (     -o-min-device-pixel-ratio: 3/2),
-                    only screen and (        min-device-pixel-ratio: 1.5),
+                @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                    only screen and (   min--moz-device-pixel-ratio: 2.5),
+                    only screen and (     -o-min-device-pixel-ratio: 5/2),
+                    only screen and (        min-device-pixel-ratio: 2.5),
                     only screen and (min-resolution: 192dpi) {
                         background: url(assets/images/google_3x.png) no-repeat;
                         background-size: 100%;
@@ -472,10 +477,10 @@ body {
                             background-size: 100%;
                         }
             
-                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                        only screen and (   min--moz-device-pixel-ratio: 1.5),
-                        only screen and (     -o-min-device-pixel-ratio: 3/2),
-                        only screen and (        min-device-pixel-ratio: 1.5),
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                        only screen and (   min--moz-device-pixel-ratio: 2.5),
+                        only screen and (     -o-min-device-pixel-ratio: 5/2),
+                        only screen and (        min-device-pixel-ratio: 2.5),
                         only screen and (min-resolution: 192dpi) {
                             background: url(assets/images/google_hover_3x.png) no-repeat;
                             background-size: 100%;
@@ -497,10 +502,10 @@ body {
                         background-size: 100%;
                     }
         
-                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                    only screen and (   min--moz-device-pixel-ratio: 1.5),
-                    only screen and (     -o-min-device-pixel-ratio: 3/2),
-                    only screen and (        min-device-pixel-ratio: 1.5),
+                @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                    only screen and (   min--moz-device-pixel-ratio: 2.5),
+                    only screen and (     -o-min-device-pixel-ratio: 5/2),
+                    only screen and (        min-device-pixel-ratio: 2.5),
                     only screen and (min-resolution: 192dpi) {
                         background: url(assets/images/youtube_3x.png) no-repeat;
                         background-size: 100%;
@@ -518,10 +523,10 @@ body {
                             background-size: 100%;
                         }
             
-                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                        only screen and (   min--moz-device-pixel-ratio: 1.5),
-                        only screen and (     -o-min-device-pixel-ratio: 3/2),
-                        only screen and (        min-device-pixel-ratio: 1.5),
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                        only screen and (   min--moz-device-pixel-ratio: 2.5),
+                        only screen and (     -o-min-device-pixel-ratio: 5/2),
+                        only screen and (        min-device-pixel-ratio: 2.5),
                         only screen and (min-resolution: 192dpi) {
                             background: url(assets/images/youtube_hover_3x.png) no-repeat;
                             background-size: 100%;
@@ -532,6 +537,7 @@ body {
     }
     
     .header-bottom {
+        top: 0;
         height: 72px;
         float: right;
         width: 50%;
@@ -568,10 +574,10 @@ body {
                         background-size: 100%;
                     }
         
-                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                    only screen and (   min--moz-device-pixel-ratio: 1.5),
-                    only screen and (     -o-min-device-pixel-ratio: 3/2),
-                    only screen and (        min-device-pixel-ratio: 1.5),
+                @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                    only screen and (   min--moz-device-pixel-ratio: 2.5),
+                    only screen and (     -o-min-device-pixel-ratio: 5/2),
+                    only screen and (        min-device-pixel-ratio: 2.5),
                     only screen and (min-resolution: 192dpi) {
                         background: url(assets/images/logo_2x.png) no-repeat;
                         background-size: 100%;
@@ -597,10 +603,10 @@ body {
                         background-size: 100%;
                     }
         
-                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                    only screen and (   min--moz-device-pixel-ratio: 1.5),
-                    only screen and (     -o-min-device-pixel-ratio: 3/2),
-                    only screen and (        min-device-pixel-ratio: 1.5),
+                @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                    only screen and (   min--moz-device-pixel-ratio: 2.5),
+                    only screen and (     -o-min-device-pixel-ratio: 5/2),
+                    only screen and (        min-device-pixel-ratio: 2.5),
                     only screen and (min-resolution: 192dpi) {
                         background: url(assets/images/zoom-icon.png) no-repeat;
                         background-size: 100%;

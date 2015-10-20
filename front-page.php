@@ -103,7 +103,7 @@ get_header(); ?>
 					<div class="container">
 						<h2><?php _e( 'Get a Quote', '_mbbasetheme' ); ?></h2>
 						<i class="icon-envelope"></i>
-						<?php the_field('contact_form_code'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="77" title="Get a quote"]'); ?>
 					</div>
 				</div>
 
