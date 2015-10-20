@@ -3437,6 +3437,58 @@ object {
   }
 }
 
+.page-banner {
+  background: url(assets/images/page-banner.jpg);
+}
+
+.page-content {
+  padding: 40px 0;
+}
+.page-content h1 {
+  font-size: 40px;
+  color: #242021;
+  margin: 0 0 25px;
+}
+.page-content h2 {
+  font-size: 26px;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #dedede;
+  margin-bottom: 20px;
+}
+.page-content p {
+  color: #666;
+  font-size: 16px;
+  font-family: Arial;
+  line-heght: 1.5;
+}
+
+@media only screen and (max-width: 1024px) {
+  .page-content {
+    padding: 30px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-content {
+    padding: 0 0 20px;
+    margin: 0 !important;
+  }
+  .page-content h1 {
+    font-size: 27px;
+    color: #fff;
+    margin: 5px 0 50px;
+  }
+  .page-content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .page-content h2 {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
 /* ==========================================================================
    Widgets
    ========================================================================== */
