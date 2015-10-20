@@ -2411,20 +2411,23 @@ object {
   margin: 0 0 30px;
 }
 
-.quote-section {
+.quote-section,
+.contact-form {
   height: 470px;
   padding: 80px 0 0;
   background: url(assets/images/quote_bg.jpg) no-repeat;
   background-size: cover !important;
   background-position: center !important;
 }
-.quote-section h2 {
+.quote-section h2,
+.contact-form h2 {
   font-size: 40px;
   color: #fff;
   text-transform: uppercase;
   margin: 0 0 50px;
 }
-.quote-section .icon-envelope {
+.quote-section .icon-envelope,
+.contact-form .icon-envelope {
   display: inline-block;
   float: right;
   width: 64px;
@@ -2435,40 +2438,49 @@ object {
   margin-bottom: -87px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-  .quote-section .icon-envelope {
+  .quote-section .icon-envelope,
+  .contact-form .icon-envelope {
     background: url(assets/images/envelope_2x.png) no-repeat;
     background-size: 100%;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-  .quote-section .icon-envelope {
+  .quote-section .icon-envelope,
+  .contact-form .icon-envelope {
     background: url(assets/images/envelope_3x.png) no-repeat;
     background-size: 100%;
   }
 }
-.quote-section form {
+.quote-section form,
+.contact-form form {
   overflow: hidden;
   width: 100%;
 }
-.quote-section form > p {
+.quote-section form > p,
+.contact-form form > p {
   float: left;
   width: 49%;
   margin: 0 0 25px;
 }
-.quote-section form > p:nth-of-type(odd) {
+.quote-section form > p:nth-of-type(odd),
+.contact-form form > p:nth-of-type(odd) {
   margin-right: 2%;
 }
-.quote-section form > p > span {
+.quote-section form > p > span,
+.contact-form form > p > span {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.quote-section form > p:last-of-type {
+.quote-section form > p:last-of-type,
+.contact-form form > p:last-of-type {
   width: 100%;
   margin-right: 0;
 }
 .quote-section form input,
-.quote-section form select {
+.quote-section form select,
+.contact-form form input,
+.contact-form form select {
   width: 100%;
   height: 60px;
   border: 0;
@@ -2479,27 +2491,37 @@ object {
   font-size: 18px;
 }
 .quote-section form input::-webkit-input-placeholder,
-.quote-section form select::-webkit-input-placeholder {
+.quote-section form select::-webkit-input-placeholder,
+.contact-form form input::-webkit-input-placeholder,
+.contact-form form select::-webkit-input-placeholder {
   font-size: 18px;
   color: #949494;
 }
 .quote-section form input:-moz-placeholder,
-.quote-section form select:-moz-placeholder {
+.quote-section form select:-moz-placeholder,
+.contact-form form input:-moz-placeholder,
+.contact-form form select:-moz-placeholder {
   font-size: 18px;
   color: #949494;
 }
 .quote-section form input::-moz-placeholder,
-.quote-section form select::-moz-placeholder {
+.quote-section form select::-moz-placeholder,
+.contact-form form input::-moz-placeholder,
+.contact-form form select::-moz-placeholder {
   font-size: 18px;
   color: #949494;
 }
 .quote-section form input:-ms-input-placeholder,
-.quote-section form select:-ms-input-placeholder {
+.quote-section form select:-ms-input-placeholder,
+.contact-form form input:-ms-input-placeholder,
+.contact-form form select:-ms-input-placeholder {
   font-size: 18px;
   color: #949494;
 }
 .quote-section form input[type="submit"],
-.quote-section form select[type="submit"] {
+.quote-section form select[type="submit"],
+.contact-form form input[type="submit"],
+.contact-form form select[type="submit"] {
   background: #ffba00;
   font-size: 20px;
   color: #fff;
@@ -2509,26 +2531,33 @@ object {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 1, 0.08);
 }
 .quote-section form input[type="submit"]:hover,
-.quote-section form select[type="submit"]:hover {
+.quote-section form select[type="submit"]:hover,
+.contact-form form input[type="submit"]:hover,
+.contact-form form select[type="submit"]:hover {
   background: #ffc322;
 }
 .quote-section form input:focus,
-.quote-section form select:focus {
+.quote-section form select:focus,
+.contact-form form input:focus,
+.contact-form form select:focus {
   outline: none;
   box-shadow: 0;
 }
-.quote-section form select {
+.quote-section form select,
+.contact-form form select {
   cursor: pointer;
   color: #949494;
 }
-.quote-section form .select-label {
+.quote-section form .select-label,
+.contact-form form .select-label {
   position: relative;
   display: inline-block;
   width: 100%;
   height: 60px;
   cursor: pointer;
 }
-.quote-section form .select-label:before {
+.quote-section form .select-label:before,
+.contact-form form .select-label:before {
   content: '';
   position: absolute;
   right: 0;
@@ -2541,7 +2570,8 @@ object {
   pointer-events: none;
   cursor: pointer;
 }
-.quote-section form .select-label:after {
+.quote-section form .select-label:after,
+.contact-form form .select-label:after {
   content: '';
   position: absolute;
   right: 22px;
@@ -2587,7 +2617,8 @@ object {
     left: 0;
   }
 
-  .quote-section {
+  .quote-section,
+  .contact-form {
     height: 420px;
     padding: 50px 0 0;
   }
@@ -2703,16 +2734,19 @@ object {
     top: -53px;
   }
 
-  .quote-section {
+  .quote-section,
+  .contact-form {
     height: auto;
     padding: 30px 0 0;
     background: #5298cf;
   }
-  .quote-section h2 {
+  .quote-section h2,
+  .contact-form h2 {
     font-size: 24px;
     margin: 0 0 20px;
   }
-  .quote-section .icon-envelope {
+  .quote-section .icon-envelope,
+  .contact-form .icon-envelope {
     width: 40px;
     height: 22px;
     background: url(assets/images/envelope.png) no-repeat;
@@ -2722,67 +2756,87 @@ object {
   }
 }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .quote-section .icon-envelope {
+  .quote-section .icon-envelope,
+  .contact-form .icon-envelope {
     background: url(assets/images/envelope_2x.png) no-repeat;
     background-size: 100%;
   }
 }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .quote-section .icon-envelope {
+  .quote-section .icon-envelope,
+  .contact-form .icon-envelope {
     background: url(assets/images/envelope_2x.png) no-repeat;
     background-size: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  .quote-section form > p {
+  .quote-section form > p,
+  .contact-form form > p {
     float: none;
     width: 100%;
     margin: 0;
     margin-bottom: 10px;
     height: 50px;
   }
-  .quote-section form > p:nth-of-type(odd) {
+  .quote-section form > p:nth-of-type(odd),
+  .contact-form form > p:nth-of-type(odd) {
     margin-right: 0;
   }
-  .quote-section form > p > span {
+  .quote-section form > p > span,
+  .contact-form form > p > span {
     display: inline-block;
     width: 100%;
     height: 100%;
   }
-  .quote-section form > p:last-of-type {
+  .quote-section form > p:last-of-type,
+  .contact-form form > p:last-of-type {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
   .quote-section form input,
-  .quote-section form select {
+  .quote-section form select,
+  .contact-form form input,
+  .contact-form form select {
     height: 50px;
     font-size: 14px;
   }
   .quote-section form input::-webkit-input-placeholder,
-  .quote-section form select::-webkit-input-placeholder {
+  .quote-section form select::-webkit-input-placeholder,
+  .contact-form form input::-webkit-input-placeholder,
+  .contact-form form select::-webkit-input-placeholder {
     font-size: 14px;
   }
   .quote-section form input:-moz-placeholder,
-  .quote-section form select:-moz-placeholder {
+  .quote-section form select:-moz-placeholder,
+  .contact-form form input:-moz-placeholder,
+  .contact-form form select:-moz-placeholder {
     font-size: 14px;
   }
   .quote-section form input::-moz-placeholder,
-  .quote-section form select::-moz-placeholder {
+  .quote-section form select::-moz-placeholder,
+  .contact-form form input::-moz-placeholder,
+  .contact-form form select::-moz-placeholder {
     font-size: 14px;
   }
   .quote-section form input:-ms-input-placeholder,
-  .quote-section form select:-ms-input-placeholder {
+  .quote-section form select:-ms-input-placeholder,
+  .contact-form form input:-ms-input-placeholder,
+  .contact-form form select:-ms-input-placeholder {
     font-size: 14px;
   }
   .quote-section form input[type="submit"],
-  .quote-section form select[type="submit"] {
+  .quote-section form select[type="submit"],
+  .contact-form form input[type="submit"],
+  .contact-form form select[type="submit"] {
     font-size: 16px;
   }
-  .quote-section form .select-label {
+  .quote-section form .select-label,
+  .contact-form form .select-label {
     height: 50px;
   }
-  .quote-section form .select-label:after {
+  .quote-section form .select-label:after,
+  .contact-form form .select-label:after {
     right: 20px;
     top: 22px;
   }
@@ -3019,6 +3073,370 @@ object {
     margin: 10px 0 20px;
   }
 }
+.contact-banner {
+  background: url(assets/images/contact-banner.jpg) no-repeat;
+}
+
+.contact-page-title {
+  display: none;
+}
+
+.contact-map-mobile {
+  display: none;
+}
+
+.contact-locations {
+  padding: 50px 0;
+  border-bottom: 1px solid #dedede;
+  background: #f7f7f7;
+}
+.contact-locations h2 {
+  font-size: 26px;
+  margin: 5px 0 20px;
+  color: #008bc3;
+  display: inline-block;
+  margin-right: 15px;
+}
+.contact-locations .location-icon {
+  display: inline-block;
+  width: 19px;
+  height: 28px;
+  background: url(assets/images/location-icon.png) no-repeat;
+  position: relative;
+  top: 6px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-locations .location-icon {
+    background: url(assets/images/location-icon_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-locations .location-icon {
+    background: url(assets/images/location-icon_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+.contact-locations .contact-locations-container {
+  overflow: auto;
+}
+.contact-locations .locations-single {
+  float: left;
+  width: -webkit-calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 20px);
+  margin-right: 20px;
+  border-right: 1px solid #dedede;
+  padding-right: 75px;
+}
+.contact-locations .locations-single:last-of-type {
+  border: 0;
+}
+.contact-locations .locations-single > span {
+  display: block;
+}
+.contact-locations .locations-single > span:first-of-type {
+  color: #242021;
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.contact-locations .locations-single > span:nth-of-type(2) {
+  font-family: Arial;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+.contact-locations .locations-single > span:nth-of-type(3) {
+  font-family: Arial;
+  color: #666;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contact-content {
+  padding: 60px 0;
+}
+.contact-content h1 {
+  font-size: 40px;
+  color: #242021;
+  margin: 0 0 25px;
+}
+.contact-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.contact-content .contact-blocks > div {
+  float: left;
+  width: -webkit-calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 20px);
+  height: 270px;
+  margin-right: 20px;
+  border: 1px solid #dedede;
+  text-align: center;
+}
+.contact-content .contact-blocks > div:hover {
+  border: 1px solid #008bc3;
+}
+.contact-content .contact-blocks > div:last-child {
+  margin-right: 0;
+}
+.contact-content .contact-blocks > div span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #008bc3;
+  line-height: 1.4;
+}
+.contact-content .contact-blocks > div span:first-of-type {
+  color: #666;
+  display: inline-block;
+  height: 50px;
+  font-weight: 400;
+}
+.contact-content .contact-blocks > div.phone span {
+  font-size: 20px;
+}
+.contact-content .contact-blocks > div.phone span:first-of-type {
+  font-size: 16px;
+}
+.contact-content .contact-blocks > div .icon-container {
+  height: 144px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-content .contact-blocks > div .icon-container i {
+  display: inline-block;
+}
+.contact-content .contact-blocks > div .icon-container .clock {
+  width: 52px;
+  height: 52px;
+  background: url(assets/images/clock.png) no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-content .contact-blocks > div .icon-container .clock {
+    background: url(assets/images/clock_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-content .contact-blocks > div .icon-container .clock {
+    background: url(assets/images/clock_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+.contact-content .contact-blocks > div .icon-container .phone {
+  width: 36px;
+  height: 50px;
+  background: url(assets/images/phone.png) no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-content .contact-blocks > div .icon-container .phone {
+    background: url(assets/images/phone_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-content .contact-blocks > div .icon-container .phone {
+    background: url(assets/images/phone_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+.contact-content .contact-blocks > div .icon-container .mail {
+  width: 64px;
+  height: 35px;
+  background: url(assets/images/email.png) no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-content .contact-blocks > div .icon-container .mail {
+    background: url(assets/images/email_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-content .contact-blocks > div .icon-container .mail {
+    background: url(assets/images/email_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+.contact-form {
+  background: #f0f0f0;
+}
+.contact-form h2 {
+  color: #242021;
+}
+.contact-form .icon-envelope {
+  background: url(assets/images/email.png) no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-form .icon-envelope {
+    background: url(assets/images/email_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .contact-form .icon-envelope {
+    background: url(assets/images/email_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+.contact-form input {
+  border: 1px solid #dedede !important;
+}
+.contact-form input[type="submit"] {
+  border: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-locations .locations-single {
+    padding-right: 20px;
+  }
+
+  .contact-content .contact-blocks > div {
+    padding: 0 10px;
+    width: -webkit-calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 20px);
+    margin-right: 10px;
+    height: 250px;
+  }
+  .contact-content .contact-blocks > div .icon-container {
+    height: 120px;
+  }
+  .contact-content .contact-blocks > div span {
+    font-size: 14px !important;
+  }
+  .contact-content .contact-blocks > div span:first-of-type {
+    height: 45px;
+  }
+  .contact-content .contact-blocks > div.phone span {
+    font-size: 18px !important;
+  }
+  .contact-content .contact-blocks > div.phone span:first-of-type {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (width: 768px) {
+  .contact-banner {
+    background: url(assets/images/contact-banner_m.jpg);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-page-title {
+    display: block;
+    margin-left: 20px;
+  }
+  .contact-page-title h1 {
+    color: #fff;
+    font-size: 34px;
+    margin: 0 0 28px;
+  }
+
+  .contact-map {
+    display: none;
+  }
+
+  .contact-map-mobile {
+    display: block;
+  }
+
+  .contact-locations {
+    padding: 30px 0 10px;
+  }
+  .contact-locations h2 {
+    font-size: 20px;
+    margin: 5px 0 15px;
+  }
+  .contact-locations .location-icon {
+    float: right;
+    width: 13px;
+    height: 20px;
+    background: url(assets/images/location-icon.png) no-repeat;
+    background-size: 100%;
+    top: 6px;
+  }
+}
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .contact-locations .location-icon {
+    background: url(assets/images/location-icon_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .contact-locations .location-icon {
+    background: url(assets/images/location-icon_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-locations .locations-single {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    border-right: 0;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding-right: 0;
+    text-align: left;
+  }
+  .contact-locations .locations-single > span {
+    display: block;
+  }
+  .contact-locations .locations-single > span:nth-of-type(2) {
+    max-width: 50%;
+    line-height: 1.4;
+  }
+
+  .contact-content {
+    padding: 30px 0;
+  }
+  .contact-content h1 {
+    font-size: 20px;
+    margin: 0 0 15px;
+  }
+  .contact-content p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+  .contact-content .contact-blocks > div {
+    float: none;
+    width: 100%;
+    height: 230px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .contact-form .icon-envelope {
+    background: url(assets/images/email.png) no-repeat;
+  }
+}
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .contact-form .icon-envelope {
+    background: url(assets/images/email_2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .contact-form .icon-envelope {
+    background: url(assets/images/email_3x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
 /* ==========================================================================
    Widgets
    ========================================================================== */
