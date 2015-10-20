@@ -462,3 +462,308 @@
         }
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .home-banner {
+        height: 630px;
+        top: -207px;
+        margin-bottom: -207px;
+        padding-top: 255px;
+        
+        .banner-content {
+            
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
+    
+    .locations-section {
+        
+        .location-single {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .home-gallery {
+    
+        .gallery-item {
+            width: 192px;
+            height: 185px;
+        }
+    }
+    
+    .testimonials-section {
+        
+        .testimonial-content {
+            padding: 0 30px;
+            
+            p {
+                
+                &:after {
+                    right: -20px;
+                }
+            }
+            
+            &:before {
+                left: 0;
+            }
+        }
+    }
+    
+    .quote-section {
+        height: 420px;
+        padding: 50px 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .home-banner {
+        height: 390px;
+        top: -72px;
+        margin-bottom: -72px;
+        padding-top: 100px;
+        
+        .banner-content {
+            
+            h2 {
+                font-size: 34px;
+                margin-bottom: 10px;
+                line-height: 1.2
+            }
+            
+            ul {
+                margin: 0 0 15px;
+                font-size: 14px;
+                padding-left: 25px;
+                
+                li {
+                    line-height: 1.9;
+                    
+                    &:before {
+                        font-size: 12px;
+                        left: -25px;
+                        top: 3px;
+                    }
+                }
+            }
+            
+            .request-quote {
+                width: 100%;
+                height: 54px;
+                line-height: 54px;
+            }
+        }
+    }
+    
+    .home-about {
+        padding: 30px 0 10px;
+        
+        h2 {
+            margin: 0 0 15px;
+            font-size: 20px;
+        }
+        
+        p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+    
+    .locations-section {
+        padding-bottom: 30px;
+        
+        h2 {
+            font-size: 20px;
+        }
+        
+        .location-single {
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            .location-description {
+                font-size: 12px;
+            }
+        }
+    }
+    
+    .home-gallery {
+    
+        .gallery-item {
+            width: 107px;
+            height: 103px;
+            
+            a {
+                
+                &:hover {
+                    
+                    &:after {
+                        width: 26px;
+                        height: 26px;
+                        background: url(assets/images/zoom-icon.png) no-repeat;
+                        
+                        @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                            only screen and (   min--moz-device-pixel-ratio: 1.5),
+                            only screen and (     -o-min-device-pixel-ratio: 3/2),
+                            only screen and (        min-device-pixel-ratio: 1.5),
+                            only screen and (min-resolution: 192dpi) {
+                                background: url(assets/images/zoom-icon.png) no-repeat;
+                                background-size: 100%;
+                            }
+                
+                        @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                            only screen and (   min--moz-device-pixel-ratio: 1.5),
+                            only screen and (     -o-min-device-pixel-ratio: 3/2),
+                            only screen and (        min-device-pixel-ratio: 1.5),
+                            only screen and (min-resolution: 192dpi) {
+                                background: url(assets/images/zoom-icon_2x.png) no-repeat;
+                                background-size: 100%;
+                            }
+                    }
+                }
+            }
+        }
+    }
+    
+    .testimonials-section {
+        padding: 20px 0;
+        
+        h2 {
+            font-size: 20px;
+            margin: 0 0 30px;
+        }
+        
+        .testimonial-content {
+            font-size: 14px;
+            
+            p {
+                
+                &:after {
+                    font-size: 46px;
+                    bottom: -45px;
+                    right: -10px;
+                }
+            }
+            
+            &:before {
+                font-size: 46px;
+                left: 10px;
+                top: -20px;
+            }
+        }
+        
+        .testimonial-author-image {
+            margin-bottom: 10px;
+            
+            img {
+                width: 77px;
+                height: 77px;
+            }
+        }
+        
+        .owl-controls {
+            top: -53px;
+        }
+    }
+    
+    .quote-section {
+        height: 386px;
+        padding: 30px 0 0;
+        background: #5298cf;
+        
+        h2 {
+            font-size: 24px;
+            margin: 0 0 20px;
+        }
+        
+        .icon-envelope {
+            width: 40px;
+            height: 22px;
+            background: url(assets/images/envelope.png) no-repeat;
+            background-size: 100%;
+            top: -43px;
+            margin-bottom: -43px;
+            
+            @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                only screen and (   min--moz-device-pixel-ratio: 1.5),
+                only screen and (     -o-min-device-pixel-ratio: 3/2),
+                only screen and (        min-device-pixel-ratio: 1.5),
+                only screen and (min-resolution: 192dpi) {
+                    background: url(assets/images/envelope_2x.png) no-repeat;
+                    background-size: 100%;
+                }
+    
+            @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                only screen and (   min--moz-device-pixel-ratio: 1.5),
+                only screen and (     -o-min-device-pixel-ratio: 3/2),
+                only screen and (        min-device-pixel-ratio: 1.5),
+                only screen and (min-resolution: 192dpi) {
+                    background: url(assets/images/envelope_2x.png) no-repeat;
+                    background-size: 100%;
+                }
+        }
+        
+        form {
+            
+            & > p {
+                float: none;
+                width: 100%;
+                margin: 0;
+                margin-bottom: 10px;
+                
+                &:nth-of-type(odd) {
+                    margin-right: 0;
+                }
+                
+                & > span {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                &:last-of-type {
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+            
+            input,
+            select {
+                height: 50px;
+                font-size: 14px;
+                
+                &::-webkit-input-placeholder {
+                    font-size: 14px;
+                }
+    
+                &:-moz-placeholder {
+                    font-size: 14px;
+                }
+    
+                &::-moz-placeholder {
+                    font-size: 14px;
+                }
+    
+                &:-ms-input-placeholder {
+                    font-size: 14px;
+                }
+    
+                &[type="submit"] {
+                    font-size: 16px;
+                }
+            }
+            
+            .select-label {
+                height: 50px;
+                
+                &:after {
+                    right: 20px;
+                    top: 22px;
+                }  
+            }
+        }
+    }
+}

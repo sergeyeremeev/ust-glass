@@ -9,12 +9,29 @@
 	
 	// carousel for locations and testimonials
 	$(document).ready(function () {
-		$('.locations-container').owlCarousel({
-			margin: 20,
-			loop: true,
-			nav: true,
-			navText: ['&lt','&gt']
-		});
+		if ($(document).width() > 1024) {
+			$('.locations-container').owlCarousel({
+				margin: 20,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
+		} else if ($(document).width() >= 768) {
+			$('.locations-container').owlCarousel({
+				margin: 20,
+				items: 2,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
+		} else {
+			$('.locations-container').owlCarousel({
+				items: 1,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
+		}
 		
 		$('.testimonials-container').owlCarousel({
 			items: 1,
@@ -41,5 +58,16 @@
 		galleryInnerContainer.owlCarousel({
 			autoWidth: true
 		});
+	});
+	
+	// toggle search on mobile
+	$(document).on('click', '.toggle-search', function () {
+		$(this).next('.search-form').toggle();
+	});
+	
+	// menu toggle
+	$(document).on('click', '.menu-toggle', function () {
+		$('.header-bottom').toggleClass('hidden');
+		$('.header-top').toggleClass('shifted');
 	});
 })(jQuery);

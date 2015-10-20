@@ -198,6 +198,15 @@ address {
 	.owl-prev {
 		margin-right: 10px;
 	}
+	
+	@media only screen and (max-width: 767px) {
+		top: -37px;
+		
+		.owl-prev,
+    	.owl-next {
+			font-size: 16px;
+		}
+	}
 }
 
 input {

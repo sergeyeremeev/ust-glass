@@ -29,8 +29,25 @@
         <div class="header-top">
             <div class="container">
                 <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <button class="menu-toggle"><?php _e( 'Primary Menu', '_mbbasetheme' ); ?></button>
+                    <button class="menu-toggle"><span></span><span></span><span></span></button>
                     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                    <div class="header-social">
+                        <ul>
+                            <?php
+                                $args = array('post_type' => 'social');
+                                $loop = new WP_Query( $args );
+                                while ( $loop->have_posts() ) : $loop->the_post();
+                            ?>
+                                <li><a class="fb" href="<?php the_field('facebook'); ?>"></a></li>
+                                <li><a class="twit" href="<?php the_field('twitter'); ?>"></a></li>
+                                <li><a class="google" href="<?php the_field('google-plus'); ?>"></a></li>
+                                <li><a class="youtube" href="<?php the_field('youtube'); ?>"></a></li>
+                            <?php
+                                endwhile;
+                                wp_reset_postdata();
+                            ?>
+                        </ul>
+                    </div>
                 </nav><!-- #site-navigation -->
             </div>
         </div><!-- .header-top -->
@@ -41,6 +58,8 @@
                     <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo"></span><?php bloginfo( 'name' ); ?></a></h1>
                 </div>
                 <div class="header-search">
+                    <div class="toggle-search">
+                    </div>
                     <?php get_search_form(); ?>
                 </div>
             </div>
