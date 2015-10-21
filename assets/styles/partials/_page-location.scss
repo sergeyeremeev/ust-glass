@@ -1,0 +1,278 @@
+.location-page-title,
+.location-mobile-map {
+	display: none;
+}
+
+.location-data {
+	position: relative;
+	width: 365px;
+	height: 480px;
+	padding: 30px 0 0;
+	top: -480px;
+	margin-bottom: -480px;
+	left: 50%;
+	transform: translateX(-480px);
+	
+	h1 {
+		font-size: 40px;
+		line-height: 1.2;
+		color: $darkGrey;
+		margin: 0 0 20px;
+	}
+	
+	.location-info {
+		
+		.location-info-single {
+			overflow: auto;
+			margin-bottom: 15px;
+			overflow: hidden;
+		}
+		
+		.icon-container {
+			width: 40px;
+			height: 40px;
+			margin-right: 20px;
+			float: left;
+			
+			i {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+			}
+			
+			.location-icon {
+				background: url(assets/images/icon-location.png) no-repeat;
+			}
+			
+			.clock-icon {
+				background: url(assets/images/clock_icon.png) no-repeat;
+			}
+			
+			.phone-icon {
+				background: url(assets/images/phone_icon.png) no-repeat;
+			}
+			
+			.email-icon {
+				background: url(assets/images/email_icon.png) no-repeat;
+			}
+		}
+		
+		.text-container {
+			float: left;
+			width: 210px;
+			
+			span {
+				display: block;
+				font-size: 16px;
+				color: #3d3d3d;
+				line-height: 1.2;
+			}
+			
+			span:first-child {
+				font-size: 12px;
+				color: $blue;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+
+.location-content {
+	padding: 50px 0 10px;
+	
+	h2 {
+		font-size: 40px;
+		color: $darkGrey;
+		margin: 0 0 25px;
+	}
+	
+	p {
+		color: #666;
+		font-size: 18px;
+		line-height: 1.6;
+	}
+}
+
+.our-categories {
+	
+	h2 {
+		font-size: 30px;
+		margin: 0 0 20px;
+		color: $darkGrey;
+	}
+	
+	figure {
+		width: calc(100% / 3 - 40px) !important;
+		float: left;
+		margin: 0 20px 40px 0;
+		overflow: hidden;
+		border: 0;
+		text-align: center;
+		
+		&:nth-of-type(3n) {
+			margin-right: 0;
+		}
+		
+		img {
+			width: auto !important;
+			min-width: 100% !important;
+			height: 170px;
+			text-align: center;
+			margin: 0 !important;
+			max-width: initial !important;
+		}
+		
+		figcaption {
+			text-align: left;
+			font-size: 16px;
+			font-weight: 700;
+			color: $blue;
+		}
+	}
+}
+
+.location-video {
+	padding: 50px 0 60px;
+	border-top: 1px solid #e5e5e5;
+	background: #f7f7f7;
+	
+	h2 {
+		font-size: 40px;
+		color: $darkGrey;
+		margin: 0 0 20px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.location-data {
+		left: 20px;
+		transform: none;
+	}
+	
+	.our-categories {
+		margin-top: -10px;
+		
+		h2 {
+			display: none;
+		}
+		
+		figure {
+			width: calc(50% - 20px) !important;
+			margin: 0 20px 40px 0;
+			overflow: hidden;
+			border: 0;
+			text-align: center;
+			
+			&:nth-of-type(even) {
+				margin-right: 0;
+			}
+			
+			&:nth-of-type(odd) {
+				margin-right: 20px;
+			}
+			
+			img {
+				height: 210px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.location-page-title,
+	.location-mobile-map {
+		display: block;
+	}
+	
+	.location-map {
+		display: none;
+	}
+	
+	.location-page-title {
+		
+		h2 {
+			color: #fff;
+			font-size: 34px;
+			margin: 0 0 28px 20px;
+		}
+	}
+	
+	.location-data {
+		background: #bbdeff;
+		width: 100%;
+		height: auto;
+		padding: 20px;
+		top: 0;
+		margin-bottom: 0;
+		left: 0;
+		
+		h1 {
+			font-size: 20px;
+			margin: 0 0 15px;
+		}
+		
+		.location-info {
+			
+			.location-info-single {
+				overflow: auto;
+				margin-bottom: 15px;
+				overflow: hidden;
+			}
+			
+			.text-container {
+				width: 180px;
+				
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	
+	.location-content {
+		padding: 20px 0 0;
+		
+		h2 {
+			font-size: 20px;
+			margin: 0 0 15px;
+		}
+		
+		p {
+			font-size: 14px;
+			line-height: 1.5;
+		}
+	}
+	
+	.our-categories {
+		margin-top: -10px;
+		
+		figure {
+			width: 100% !important;
+			float: left;
+			margin: 0 0 15px 0;
+			
+			&:nth-of-type(3n),
+			&:nth-of-type(even),
+			&:nth-of-type(odd) {
+				margin-right: 0;
+			}
+			
+			img {
+				width: 100% !important;
+				min-height: 170px;
+				height: auto;
+			}
+		}
+	}
+	
+	.location-video {
+		padding: 20px 0 30px;
+		
+		h2 {
+			font-size: 20px;
+			margin: 0 0 15px;
+		}
+	}
+}
