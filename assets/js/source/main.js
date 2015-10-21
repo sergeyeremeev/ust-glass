@@ -100,7 +100,7 @@
 				nav: true,
 				navText: ['&lt','&gt']
 			});
-        } else if ($(document).width() >= 768 && $(document).width() <= 1024) {
+        } else if ($(document).width() >= 768) {
             if ($('.locations-container').find('.owl-stage').length !== 0) {
                 $('.locations-container').data('owlCarousel').destroy();
                 $('.locations-container').removeClass('owl-carousel owl-loaded owl-desktop');

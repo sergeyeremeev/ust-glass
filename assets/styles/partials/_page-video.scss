@@ -2,6 +2,10 @@
 	background: url(assets/images/video-banner.jpg) no-repeat;
 }
 
+.video-page-title {
+	display: none;
+}
+
 .video-page-content {
 	padding: 50px 0 20px;
 	
@@ -86,6 +90,7 @@
 
 @media only screen and (max-width: 767px) {
 	.video-page-title {
+		display: block;
 		
 		h1 {
 			color: #fff;

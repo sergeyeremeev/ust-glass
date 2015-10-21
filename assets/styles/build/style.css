@@ -3905,6 +3905,10 @@ object {
   background: url(assets/images/video-banner.jpg) no-repeat;
 }
 
+.video-page-title {
+  display: none;
+}
+
 .video-page-content {
   padding: 50px 0 20px;
 }
@@ -3967,6 +3971,9 @@ object {
 }
 
 @media only screen and (max-width: 767px) {
+  .video-page-title {
+    display: block;
+  }
   .video-page-title h1 {
     color: #fff;
     font-size: 34px;
