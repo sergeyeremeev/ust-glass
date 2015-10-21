@@ -994,7 +994,8 @@ input {
   height: 42px !important;
 }
 
-.mejs-currenttime-container {
+.mejs-currenttime-container,
+.mejs-time-rail {
   display: none !important;
 }
 
@@ -3489,6 +3490,10 @@ object {
     margin-bottom: 15px;
   }
 }
+.product-banner {
+  background: url(assets/images/product-banner.jpg) no-repeat;
+}
+
 .location-page-title,
 .location-mobile-map {
   display: none;
@@ -3723,6 +3728,99 @@ object {
   .location-video h2 {
     font-size: 20px;
     margin: 0 0 15px;
+  }
+}
+.video-banner {
+  background: url(assets/images/video-banner.jpg) no-repeat;
+}
+
+.video-page-content {
+  padding: 50px 0 20px;
+}
+.video-page-content h2 {
+  margin: 20px 0 20px;
+  font-size: 36px;
+  color: #242021;
+}
+.video-page-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.related-videos {
+  padding: 60px 0;
+  background: #f7f7f7;
+  border-top: 1px solid #dedede;
+}
+.related-videos h2 {
+  font-size: 30px;
+  color: #242021;
+  margin: 0 0 25px;
+}
+.related-videos .videos-container .owl-controls {
+  top: -55px;
+}
+.related-videos .videos-container .mejs-controls {
+  display: none !important;
+}
+.related-videos .videos-container .mejs-overlay-button {
+  width: 60px !important;
+  height: 60px !important;
+  margin: -15px 0 0 -30px !important;
+}
+.related-videos .videos-container p {
+  font-size: 18px;
+  color: #242021;
+}
+.related-videos .videos-container .video-gallery-item:hover p {
+  color: #008bc3;
+  font-weight: 700;
+}
+.related-videos .videos-container .video-gallery-item:hover .mejs-overlay-button {
+  background: url(assets/images/play_btn_blue.png) no-repeat !important;
+  background-size: 100% !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .related-videos .videos-container .video-gallery-item:hover .mejs-overlay-button {
+    background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .related-videos .videos-container .video-gallery-item:hover .mejs-overlay-button {
+    background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video-page-title h1 {
+    color: #fff;
+    font-size: 34px;
+    margin: 0 0 28px 20px;
+  }
+
+  .video-page-content {
+    padding: 20px 0;
+  }
+  .video-page-content h2 {
+    margin: 15px 0 15px;
+    font-size: 20px;
+    color: #242021;
+  }
+  .video-page-content p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .related-videos {
+    padding: 20px 0;
+  }
+  .related-videos p {
+    font-size: 16px !important;
   }
 }
 /* ==========================================================================

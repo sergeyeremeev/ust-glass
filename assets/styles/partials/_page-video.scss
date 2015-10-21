@@ -1,0 +1,120 @@
+.video-banner {
+	background: url(assets/images/video-banner.jpg) no-repeat;
+}
+
+.video-page-content {
+	padding: 50px 0 20px;
+	
+	h2 {
+		margin: 20px 0 20px;
+		font-size: 36px;
+		color: $darkGrey;
+	}
+	
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+		color: #666;
+		margin-bottom: 20px;
+	}
+}
+
+.related-videos {
+	padding: 60px 0;
+	background: #f7f7f7;
+	border-top: 1px solid #dedede;
+	
+	h2 {
+		font-size: 30px;
+		color: $darkGrey;
+		margin: 0 0 25px;
+	}
+	
+	.videos-container {
+		
+		.owl-controls {
+			top: -55px;
+		}
+		
+		.mejs-controls {
+			display: none !important;
+		}
+		
+		.mejs-overlay-button {
+			width: 60px !important;
+			height: 60px !important;
+			margin: -15px 0 0 -30px !important;
+		}
+		
+		p {
+			font-size: 18px;
+			color: $darkGrey;
+		}
+		
+		.video-gallery-item:hover {
+			
+			p {
+				color: $blue;
+				font-weight: 700;
+			}
+			
+			.mejs-overlay-button {
+				background: url(assets/images/play_btn_blue.png) no-repeat !important;
+				background-size: 100% !important;
+				
+				@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+					only screen and (   min--moz-device-pixel-ratio: 1.5),
+					only screen and (     -o-min-device-pixel-ratio: 3/2),
+					only screen and (        min-device-pixel-ratio: 1.5),
+					only screen and (min-resolution: 192dpi) {
+						background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+						background-size: 100% !important;
+					}
+			
+				@media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+					only screen and (   min--moz-device-pixel-ratio: 2.5),
+					only screen and (     -o-min-device-pixel-ratio: 5/2),
+					only screen and (        min-device-pixel-ratio: 2.5),
+					only screen and (min-resolution: 192dpi) {
+						background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+						background-size: 100% !important;
+					}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.video-page-title {
+		
+		h1 {
+			color: #fff;
+			font-size: 34px;
+			margin: 0 0 28px 20px;
+		}
+	}
+	
+	.video-page-content {
+		padding: 20px 0;
+		
+		h2 {
+			margin: 15px 0 15px;
+			font-size: 20px;
+			color: $darkGrey;
+		}
+		
+		p {
+			font-size: 14px;
+			line-height: 1.4;
+			margin-bottom: 15px;
+		}
+	}
+	
+	.related-videos {
+		padding: 20px 0;
+		
+		p {
+			font-size: 16px !important;
+		}
+	}
+}

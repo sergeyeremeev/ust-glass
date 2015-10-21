@@ -5,13 +5,27 @@
 		galleryOuterContainer,
 		galleryInnerContainer,
 		repetitions,
-		leftOutImage;
+		leftOutImage,
+		videosLength;
+		
+	// wrap videos and text underneath in containers
+	for (i = 0, videosLength = $('.videos-container').children().length; i < videosLength / 2; i++) {
+		$('.videos-container').children('p:first-of-type').prevAll('.wp-video').addBack().wrapAll('<div class="video-gallery-item"/>');
+	}
 	
-	// carousel for locations and testimonials
+	// carousel for locations, videos and testimonials
 	$(document).ready(function () {
 		if ($(document).width() > 1024) {
 			$('.locations-container').owlCarousel({
 				margin: 20,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
+			
+			$('.videos-container').owlCarousel({
+				margin: 20,
+				items: 3,
 				loop: true,
 				nav: true,
 				navText: ['&lt','&gt']
@@ -24,8 +38,24 @@
 				nav: true,
 				navText: ['&lt','&gt']
 			});
+			
+			$('.videos-container').owlCarousel({
+				margin: 20,
+				items: 2,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
 		} else {
 			$('.locations-container').owlCarousel({
+				items: 1,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
+			
+			$('.videos-container').owlCarousel({
+				margin: 20,
 				items: 1,
 				loop: true,
 				nav: true,

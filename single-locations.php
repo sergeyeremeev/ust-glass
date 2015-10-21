@@ -17,7 +17,7 @@
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="top-banner contact-banner">
+				<div class="top-banner product-banner">
 				</div>
 				
 				<div class="breadcrumbs">
