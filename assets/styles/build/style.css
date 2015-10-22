@@ -2449,6 +2449,12 @@ object {
   top: 0;
   background: #5b9dd0;
 }
+.quote-section .pattern-bg-contact,
+.contact-form .pattern-bg-contact {
+  padding: 70px 0 0;
+  height: 100%;
+  background: url(assets/images/contact-form-bg.png);
+}
 .quote-section h2,
 .contact-form h2 {
   font-size: 40px;
@@ -3336,11 +3342,18 @@ object {
     background-size: 100%;
   }
 }
-.contact-form input {
+.contact-form form input {
   border: 1px solid #dedede !important;
+  box-shadow: inset 0px 2px 1px 0px rgba(0, 0, 1, 0.07);
+  color: #292929;
 }
-.contact-form input[type="submit"] {
+.contact-form form input:focus {
+  border: 1px solid #c2c2c2 !important;
+  box-shadow: none;
+}
+.contact-form form input[type="submit"] {
   border: none !important;
+  box-shadow: none;
 }
 
 @media only screen and (max-width: 1024px) {

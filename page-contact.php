@@ -90,10 +90,12 @@
 				</div>
 				
 				<div class="contact-form">
-					<div class="container">
-						<h2><?php _e( 'Send an email', '_mbbasetheme' ); ?></h2>
-						<i class="icon-envelope"></i>
-						<?php echo do_shortcode('[contact-form-7 id="128" title="Contact Form"]'); ?>
+					<div class="pattern-bg-contact">
+						<div class="container">
+							<h2><?php _e( 'Send an email', '_mbbasetheme' ); ?></h2>
+							<i class="icon-envelope"></i>
+							<?php echo do_shortcode('[contact-form-7 id="128" title="Contact Form"]'); ?>
+						</div>
 					</div>
 				</div>
 

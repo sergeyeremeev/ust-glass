@@ -15,10 +15,6 @@ module.exports = function(grunt) {
             js: {
                 files: '<%= jshint.all %>',
                 tasks: ['jshint', 'uglify']
-            },
-            images: {
-                files: ['assets/images/**/*.{png,jpg,gif}'],
-                tasks: ['imagemin']
             }
         },
 

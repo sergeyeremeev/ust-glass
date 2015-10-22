@@ -268,11 +268,19 @@
             }
     }
 	
-	input {
+	form input {
 		border: 1px solid #dedede !important;
+		box-shadow: inset 0px 2px 1px 0px rgba(0, 0, 1, 0.07);
+		color: #292929;
+		
+		&:focus {
+			border: 1px solid #c2c2c2 !important;
+			box-shadow: none;
+		}
 		
 		&[type="submit"] {
 			border: none !important;
+			box-shadow: none;
 		}
 	}
 }

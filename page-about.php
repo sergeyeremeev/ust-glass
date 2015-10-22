@@ -55,10 +55,12 @@
 				</div>
 				
 				<div class="quote-section">
-					<div class="container">
-						<h2><?php _e( 'Get a Quote', '_mbbasetheme' ); ?></h2>
-						<i class="icon-envelope"></i>
-						<?php echo do_shortcode('[contact-form-7 id="77" title="Get a quote"]'); ?>
+					<div class="pattern-bg">
+						<div class="container">
+							<h2><?php _e( 'Get a Quote', '_mbbasetheme' ); ?></h2>
+							<i class="icon-envelope"></i>
+							<?php echo do_shortcode('[contact-form-7 id="77" title="Get a quote"]'); ?>
+						</div>
 					</div>
 				</div>
 
