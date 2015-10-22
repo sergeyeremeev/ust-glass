@@ -3730,8 +3730,22 @@ object {
   display: none;
 }
 
+.postid-45 .location-map {
+  position: relative;
+}
+.postid-45 .location-map:before {
+  content: '';
+  height: 100%;
+  width: 50%;
+  background: -webkit-linear-gradient(left, #b9dcff 0, #b8dafe 90%, transparent 100%);
+  background: linear-gradient(to right, #b9dcff 0, #b8dafe 90%, transparent 100%);
+  position: absolute;
+  z-index: 2;
+}
+
 .location-data {
   position: relative;
+  z-index: 3;
   width: 365px;
   height: 480px;
   padding: 30px 0 0;
@@ -3835,7 +3849,7 @@ object {
 }
 .our-categories figure figcaption {
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: #008bc3;
 }

@@ -7,8 +7,22 @@
 	display: none;
 }
 
+.postid-45 .location-map {
+	position: relative;
+	
+	&:before {
+		content: '';
+		height: 100%;
+		width: 50%;
+		background: linear-gradient(to right, #b9dcff 0, #b8dafe 90%, transparent 100%);
+		position: absolute;
+		z-index: 2;
+	}
+}
+
 .location-data {
 	position: relative;
+	z-index: 3;
 	width: 365px;
 	height: 480px;
 	padding: 30px 0 0;
@@ -130,7 +144,7 @@
 		
 		figcaption {
 			text-align: left;
-			font-size: 16px;
+			font-size: 15px;
 			font-weight: 700;
 			color: $blue;
 		}
