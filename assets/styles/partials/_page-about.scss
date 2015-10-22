@@ -54,19 +54,30 @@
 	
 	.about-us-top {
 		@include clearfix;
-		padding-bottom: 50px;
+		padding-bottom: 60px;
 		border-bottom: 1px solid #e5e5e5;
 	}
 	
 	.about-us-bottom {
 		@include clearfix;
-		padding: 60px 0 20px;
+		padding: 60px 0 0;
+		
+		h2 {
+			margin-top: 0;
+		}
 	}
 	
 	h1 {
 		font-size: 40px;
 		color: $darkGrey;
 		margin: 0 0 20px;
+	}
+	
+	p {
+		font-size: 16px;
+		color: #666;
+		line-height: 1.8;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	
 	.left-col {
@@ -111,8 +122,7 @@
 		font-size: 16px;
 		font-weight: 700;
 		text-transform: uppercase;
-		border-radius: 5px;
-		box-shadow: 0px 2px 2px 0px rgba(0, 0, 1, 0.2);
+		border-radius: 4px;
 		
 		&:hover {
 			background: $lightYellow;
@@ -136,8 +146,7 @@
 		font-size: 12px;
 		font-weight: 700;
 		text-transform: uppercase;
-		border-radius: 5px;
-		box-shadow: 0px 2px 2px 0px rgba(0, 0, 1, 0.2);
+		border-radius: 4px;
 		
 		&:hover {
 			background: $blue;

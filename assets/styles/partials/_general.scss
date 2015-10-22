@@ -209,8 +209,9 @@ address {
 	}
 }
 
-input {
-	-webkit-appearance: none !important;
+input[type="text"], input[type="password"], textarea, select { 
+  outline: none;
+  -webkit-appearance: none !important;
 }
 
 .mejs-overlay-button {

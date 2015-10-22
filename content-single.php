@@ -17,7 +17,7 @@
 		</div>
 	</div>
 
-	<div class="post-content">
+	<div class="post-page-content">
 		<div class="container">
 			<div class="post-image">
 				<?php the_post_thumbnail(); ?>
