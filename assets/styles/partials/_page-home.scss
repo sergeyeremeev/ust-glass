@@ -564,8 +564,11 @@
     
     .quote-section,
     .contact-form {
-        height: 420px;
-        padding: 50px 0 0;
+        
+         .pattern-bg,
+         .pattern-bg-contact {
+            padding: 50px 0;   
+         }
     }
 }
 

@@ -27,12 +27,17 @@
 	}
 }
 
-.blog {
+.blog,
+.related-articles {
 	
 	h1 {
 		margin: 60px 0 30px;
 		color: $darkGrey;
 		font-size: 40px;
+		max-width: 100%;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 		
 		a {
 			color: inherit;
@@ -46,11 +51,7 @@
 	article {
 		float: left;
 		width: calc(50% - 40px);
-		margin-bottom: 50px;
-		
-		&:nth-of-type(odd) {
-			margin-right: 40px;
-		}
+		margin-bottom: 50px !important;
 		
 		h1 {
 			font-size: 18px;
@@ -126,11 +127,52 @@
 	display: none;
 }
 
+.hentry {
+	margin: 0 !important;
+}
+
+.blog .hentry {
+	
+	&:nth-of-type(odd) {
+		margin-right: 40px !important;
+	}
+}
+
+.related-articles {
+	padding: 80px 0;
+	background: #f7f7f7;
+	border-top: 1px solid #dedede;
+	
+	h3 {
+		font-size: 30px;
+		color: $darkGrey;
+		margin: 0 0 20px;
+	}
+	
+	article {
+		width: calc((100% - 40px) / 3);
+		margin-right: 20px;
+		margin-bottom: 0 !important;
+		
+		&:nth-of-type(3n) {
+			margin-right: 0;
+		}
+		
+		p {
+			font-size: 14px;
+		}
+	}
+	
+	.addtoany_content_bottom {
+		display: none !important;
+	}
+}
+
 .post-page-content {
-	padding: 40px 0;
+	padding: 60px 0 80px;
 	
 	.post-category {
-		margin: 10px 0 5px;
+		margin: 13px 0 0;
 		
 		ul {
 			list-style-type: none;
@@ -173,6 +215,7 @@
 		color: #666;
 		margin: 25px 0;
 		font-family: Arial;
+		line-height: 1.8;
 		
 		img {
 			margin: 10px 20px 10px 0;
@@ -195,9 +238,84 @@
 	}
 }
 
+.addtoany_content_bottom {
+	
+	.addtoany_header {
+		font-size: 15px;
+		color: $blue;
+		display: inline-block;
+		float: left;
+		margin-right: 15px;
+		position: relative;
+		top: 7px;
+		font-weight: 700;
+	}
+	
+	.a2a_target > a {
+		float: left;
+		margin-right: 4px;
+		
+		span {
+			width: 37px !important;
+			height: 36px !important;
+		}
+	}
+	
+	.a2a_target > .a2a_button_email {
+		
+		span {
+			width: 91px !important;
+			background: url(assets/images/email-btn.jpg);
+		}
+	}
+	
+	.a2a_button_facebook {
+		
+		span {
+			background: url(assets/images/fb-btn.jpg);
+		}
+	}
+	
+	.a2a_button_twitter {
+		
+		span {
+			background: url(assets/images/twit-btn.jpg);
+		}
+	}
+	
+	.a2a_button_google_plus {
+		
+		span {
+			background: url(assets/images/google-btn.jpg);
+		}
+	}
+	
+	.a2a_button_linkedin {
+		
+		span {
+			background: url(assets/images/linked-btn.jpg);
+		}
+	}
+}
+
 @media only screen and (max-width: 1024px) {
 	.page-content {
 		padding: 30px 0;
+	}
+	
+	.related-articles {
+		
+		article {
+			width: calc((100% - 20px) / 2);
+			
+			&:nth-of-type(3n) {
+				margin-right: ininital;
+			}
+			
+			&:nth-of-type(2n) {
+				margin-right: 0;
+			}
+		}
 	}
 }
 

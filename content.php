@@ -21,4 +21,5 @@
 			<?php the_excerpt(); ?>
             <a class="read-more" href="<?php the_permalink(); ?>">read more</a>
 		</div>
+	</div>
 </article><!-- #post-## -->

@@ -29,4 +29,54 @@
 			<?php the_content(); ?>
 		</div>
 	</div><!-- .entry-content -->
+	
+	<div class="related-articles">
+		<div class="container">
+			<h3>Related posts</h3>
+			<div class="articles-container">
+				<?php
+					global $post;
+					$cat_ID=array();
+					$categories = get_the_category(); //get all categories for this post
+					foreach($categories as $category) {
+						array_push($cat_ID,$category->cat_ID);
+					}
+					$args = array(
+					'orderby' => 'date',
+					'order' => 'DESC',
+						'post_type' => 'post',
+						'numberposts' => 8,
+						'post__not_in' => array($post->ID),
+						'category__in' => $cat_ID
+					); // post__not_in will exclude the post we are displaying
+						$cat_posts = get_posts($args);
+					if ($cat_posts) {
+					foreach ($cat_posts as $cat_post) {
+						?>
+						<article>
+							<div class="post-container">
+								<div class="post-image">
+									<a href="<?php the_permalink(); ?>">
+										<?php the_post_thumbnail(array(360, 200)); ?>
+									</a>
+								</div>
+						
+								<div class="post-category">
+									<?php the_category(); ?>
+								</div>
+								
+								<div class="post-content">
+									<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+									<?php my_excerpt(12); ?>
+									<a class="read-more" href="<?php the_permalink(); ?>">read more</a>
+								</div>
+							</div>
+						</article>
+						<?php
+						}
+					}
+				?>
+			</div>
+		</div>
+	</div>
 </article><!-- #post-## -->
