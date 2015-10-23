@@ -7,7 +7,9 @@
 		repetitions,
 		leftOutImage,
 		videosLength,
-		videoClickTarget;
+		videoClickTarget,
+		bannerHeight,
+		pageContainer;
 		
 	// wrap videos and text underneath in containers
 	for (i = 0, videosLength = $('.videos-container').children().length; i < videosLength / 2; i++) {
@@ -339,11 +341,32 @@
 	
 	$(document).on('click', function (e) {
 		if ($(document).width() >= 768) {
-			var videoClickTarget = e.target;
+			videoClickTarget = e.target;
 			if ($('.video-section-container').find('video').is(videoClickTarget)) {
 				$('.video-large').find('video').attr('src', $(videoClickTarget).attr('src')); 
 				$('.video-large').find('video').find('source').attr('src', $(videoClickTarget).find('source').attr('src')); 
 			}
 		}
 	});
+	
+	
+	// homepage sticky header functionality
+	if ($('body').hasClass('home')) {
+		bannerHeight = $('.home-banner').height();
+		$(document).on('scroll', function () {
+			if ($(document).width() >= 768) {
+				if ($(window).scrollTop() > bannerHeight + 184) {
+					$('body').addClass("sticky-header");
+				} else {
+					$('body').removeClass("sticky-header");
+				}
+			} else {
+				if ($(window).scrollTop() > bannerHeight + 72) {
+					$('body').addClass("sticky-header");
+				} else {
+					$('body').removeClass("sticky-header");
+				}
+			}
+		});
+	}
 })(jQuery);
