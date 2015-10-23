@@ -726,8 +726,16 @@
     .quote-section,
     .contact-form {
         height: auto;
-        padding: 30px 0 0;
         background: #5298cf;
+            
+        .pattern-bg,
+        .pattern-bg-contact {
+            padding: 30px 0;   
+        }
+        
+        .pattern-bg {
+            background: #5298cf;
+        }
         
         h2 {
             font-size: 24px;
@@ -783,7 +791,6 @@
                 &:last-of-type {
                     width: 100%;
                     margin-right: 0;
-                    margin-bottom: 20px;
                 }
             }
             
@@ -822,5 +829,11 @@
                 }  
             }
         }
+    }
+}
+
+@media only screen and (width: 320px) {
+    .home-banner {
+        padding-top: 80px;
     }
 }
