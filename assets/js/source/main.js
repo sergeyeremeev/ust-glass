@@ -30,6 +30,14 @@
 				nav: true,
 				navText: ['&lt','&gt']
 			});
+			
+			$('.articles-container').owlCarousel({
+				margin: 20,
+				items: 3,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
 		} else if ($(document).width() >= 768) {
 			$('.locations-container').owlCarousel({
 				margin: 20,
@@ -46,6 +54,14 @@
 				nav: true,
 				navText: ['&lt','&gt']
 			});
+			
+			$('.articles-container').owlCarousel({
+				margin: 20,
+				items: 2,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
 		} else {
 			$('.locations-container').owlCarousel({
 				items: 1,
@@ -56,6 +72,13 @@
 			
 			$('.videos-container').owlCarousel({
 				margin: 20,
+				items: 1,
+				loop: true,
+				nav: true,
+				navText: ['&lt','&gt']
+			});
+			
+			$('.articles-container').owlCarousel({
 				items: 1,
 				loop: true,
 				nav: true,

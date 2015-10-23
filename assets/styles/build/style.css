@@ -3641,15 +3641,17 @@ object {
   background: #f7f7f7;
   border-top: 1px solid #dedede;
 }
+.related-articles .owl-controls {
+  top: -50px;
+}
 .related-articles h3 {
   font-size: 30px;
   color: #242021;
   margin: 0 0 20px;
 }
 .related-articles article {
-  width: -webkit-calc((100% - 40px) / 3);
-  width: calc((100% - 40px) / 3);
-  margin-right: 20px;
+  width: 100%;
+  margin-right: 0 !important;
   margin-bottom: 0 !important;
 }
 .related-articles article:nth-of-type(3n) {
@@ -3759,17 +3761,6 @@ object {
   .page-content {
     padding: 30px 0;
   }
-
-  .related-articles article {
-    width: -webkit-calc((100% - 20px) / 2);
-    width: calc((100% - 20px) / 2);
-  }
-  .related-articles article:nth-of-type(3n) {
-    margin-right: ininital;
-  }
-  .related-articles article:nth-of-type(2n) {
-    margin-right: 0;
-  }
 }
 @media only screen and (max-width: 767px) {
   .page-content {
@@ -3829,6 +3820,46 @@ object {
   }
   .post-content h2 {
     font-size: 18px;
+  }
+
+  .post-page-content {
+    padding: 20px 0 30px;
+  }
+  .post-page-content h1 {
+    font-size: 20px;
+  }
+  .post-page-content h2 {
+    font-size: 20px;
+  }
+  .post-page-content p {
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  .post-page-content p img {
+    margin: 10px 20px 10px 0;
+  }
+  .post-page-content .addtoany_header {
+    display: none !important;
+  }
+
+  .related-articles {
+    padding: 30px 0;
+  }
+  .related-articles .owl-controls {
+    top: -36px;
+  }
+  .related-articles h3 {
+    font-size: 20px;
+    margin: 0 0 15px;
+  }
+  .related-articles article h1 {
+    font-size: 16px;
+    white-space: initial;
+    text-overflow: initial;
+    overflow: visible;
+  }
+  .related-articles article p {
+    display: none;
   }
 }
 .product-banner {
