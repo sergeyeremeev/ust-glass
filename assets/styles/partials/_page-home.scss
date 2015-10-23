@@ -433,14 +433,14 @@
         position: relative;
     }
     
-    .wpcf7-validation-errors {
-        border: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        position: absolute !important;
-        bottom: 30px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
+    .wpcf7-validation-errors,
+    .wpcf7-not-valid-tip {
+        display: none !important;
+    }
+    
+    .wpcf7-not-valid {
+        border: 1px solid #C15B50 !important;
+        background: #F7D6F5 !important;
     }
     
     h2 {

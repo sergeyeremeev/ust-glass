@@ -1776,6 +1776,14 @@ body {
   width: 100%;
   display: inline-block;
 }
+.site-footer .col-3 form .wpcf7-validation-errors,
+.site-footer .col-3 form .wpcf7-not-valid-tip {
+  display: none !important;
+}
+.site-footer .col-3 form .wpcf7-not-valid {
+  border: 1px solid #C15B50 !important;
+  background: #F7D6F5 !important;
+}
 .site-footer .col-3 form input {
   width: 100%;
   border: 0;
@@ -2578,16 +2586,15 @@ object {
   position: relative;
 }
 .quote-section .wpcf7-validation-errors,
-.contact-form .wpcf7-validation-errors {
-  border: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  position: absolute !important;
-  bottom: 30px !important;
-  left: 50% !important;
-  -webkit-transform: translateX(-50%) !important;
-      -ms-transform: translateX(-50%) !important;
-          transform: translateX(-50%) !important;
+.quote-section .wpcf7-not-valid-tip,
+.contact-form .wpcf7-validation-errors,
+.contact-form .wpcf7-not-valid-tip {
+  display: none !important;
+}
+.quote-section .wpcf7-not-valid,
+.contact-form .wpcf7-not-valid {
+  border: 1px solid #C15B50 !important;
+  background: #F7D6F5 !important;
 }
 .quote-section h2,
 .contact-form h2 {
