@@ -96,6 +96,11 @@ get_header(); ?>
 				<div class="videos-section">
 					<div class="container">
 						<h2><?php _e( 'Videos', '_mbbasetheme' ); ?></h2>
+						<div class="video-large">
+						</div>
+						<div class="video-section-container">
+							<?php the_field('video_gallery'); ?>
+						</div>
 					</div>
 				</div>
 				

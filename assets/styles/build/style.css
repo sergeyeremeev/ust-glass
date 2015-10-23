@@ -2410,7 +2410,74 @@ object {
 }
 .videos-section h2 {
   font-size: 40px;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
+}
+.videos-section .video-large {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.videos-section .video-large .wp-video {
+  width: 100% !important;
+}
+.videos-section .video-section-container .owl-controls {
+  top: -615px;
+}
+.videos-section .video-section-container .mejs-video {
+  position: relative;
+  cursor: pointer;
+}
+.videos-section .video-section-container .mejs-video .mejs-controls {
+  display: none !important;
+}
+.videos-section .video-section-container .mejs-video .mejs-overlay-button {
+  width: 60px !important;
+  height: 60px !important;
+  margin: -15px 0 0 -30px !important;
+}
+.videos-section .video-section-container .mejs-video .mejs-layers {
+  display: none !important;
+}
+.videos-section .video-section-container .mejs-video:after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background: url(assets/images/play_btn.png) no-repeat !important;
+  background-size: 100% !important;
+  pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .videos-section .video-section-container .mejs-video:after {
+    background: url(assets/images/play_btn_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .videos-section .video-section-container .mejs-video:after {
+    background: url(assets/images/play_btn_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+.videos-section .video-section-container .mejs-video:hover:after {
+  background: url(assets/images/play_btn_blue.png) no-repeat !important;
+  background-size: 100% !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .videos-section .video-section-container .mejs-video:hover:after {
+    background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .videos-section .video-section-container .mejs-video:hover:after {
+    background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
 }
 
 .quote-section,
@@ -2679,6 +2746,13 @@ object {
   .contact-form .pattern-bg-contact {
     padding: 50px 0;
   }
+
+  .videos-section .wp-video {
+    width: auto !important;
+  }
+  .videos-section .video-section-container .owl-controls {
+    top: -500px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .home-banner {
@@ -2905,7 +2979,48 @@ object {
     right: 20px;
     top: 22px;
   }
+
+  .videos-section {
+    padding: 30px 0;
+  }
+  .videos-section .video-section-container .owl-controls {
+    top: -37px;
+  }
+  .videos-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .videos-section .video-large {
+    display: none;
+  }
+  .videos-section .video-section-container .mejs-video {
+    position: relative;
+    cursor: defaul;
+  }
+  .videos-section .video-section-container .mejs-video .mejs-layers {
+    display: block !important;
+  }
+  .videos-section .video-section-container .mejs-video:after {
+    content: none;
+  }
+  .videos-section .video-section-container .mejs-video .mejs-overlay-button:hover {
+    background: url(assets/images/play_btn_blue.png) no-repeat !important;
+    background-size: 100% !important;
+  }
 }
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .videos-section .video-section-container .mejs-video .mejs-overlay-button:hover {
+    background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .videos-section .video-section-container .mejs-video .mejs-overlay-button:hover {
+    background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+    background-size: 100% !important;
+  }
+}
+
 @media only screen and (width: 320px) {
   .home-banner {
     padding-top: 80px;

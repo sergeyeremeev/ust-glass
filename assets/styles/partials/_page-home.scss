@@ -296,7 +296,99 @@
     
     h2 {
         font-size: 40px;
-        margin: 0 0 30px;
+        margin: 0 0 20px;
+    }
+    
+    .video-large {
+        width: 100%;
+        margin-bottom: 40px;
+        
+        .wp-video {
+            width: 100% !important;
+        }
+    }
+        
+    .video-section-container {
+        
+        .owl-controls {
+            top: -615px;
+        }
+        
+        .mejs-video {
+            position: relative;
+            cursor: pointer;
+            
+            .mejs-controls {
+                display: none !important;
+            }
+            
+            .mejs-overlay-button {
+                width: 60px !important;
+                height: 60px !important;
+                margin: -15px 0 0 -30px !important;
+            }
+            
+            .mejs-layers {
+                display: none !important;
+            }
+            
+            &:after {
+                content: '';
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                background: url(assets/images/play_btn.png) no-repeat !important;
+                background-size: 100% !important;
+                pointer-events: none;
+                
+                @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (   min--moz-device-pixel-ratio: 1.5),
+                    only screen and (     -o-min-device-pixel-ratio: 3/2),
+                    only screen and (        min-device-pixel-ratio: 1.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/play_btn_2x.png) no-repeat !important;
+                        background-size: 100% !important;
+                    }
+            
+                @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                    only screen and (   min--moz-device-pixel-ratio: 2.5),
+                    only screen and (     -o-min-device-pixel-ratio: 5/2),
+                    only screen and (        min-device-pixel-ratio: 2.5),
+                    only screen and (min-resolution: 192dpi) {
+                        background: url(assets/images/play_btn_2x.png) no-repeat !important;
+                        background-size: 100% !important;
+                    }
+            }
+            
+            &:hover {
+            
+                &:after {
+                    background: url(assets/images/play_btn_blue.png) no-repeat !important;
+                    background-size: 100% !important;
+                    
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (   min--moz-device-pixel-ratio: 1.5),
+                        only screen and (     -o-min-device-pixel-ratio: 3/2),
+                        only screen and (        min-device-pixel-ratio: 1.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+                            background-size: 100% !important;
+                        }
+                
+                    @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+                        only screen and (   min--moz-device-pixel-ratio: 2.5),
+                        only screen and (     -o-min-device-pixel-ratio: 5/2),
+                        only screen and (        min-device-pixel-ratio: 2.5),
+                        only screen and (min-resolution: 192dpi) {
+                            background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+                            background-size: 100% !important;
+                        }
+                }
+            }
+        }
     }
 }
 
@@ -570,6 +662,20 @@
             padding: 50px 0;   
          }
     }
+    
+    .videos-section {
+        
+        .wp-video {
+            width: auto !important;
+        }
+        
+        .video-section-container {
+        
+            .owl-controls {
+                top: -500px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -828,6 +934,62 @@
                     top: 22px;
                 }  
             }
+        }
+    }
+    
+    .videos-section {
+        padding: 30px 0;
+        
+        .video-section-container {
+            
+            .owl-controls {
+                top: -37px;
+            }
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .video-large {
+            display: none;
+        }
+        
+        .video-section-container .mejs-video {
+            position: relative;
+            cursor: defaul;
+            
+            .mejs-layers {
+                display: block !important;
+            }
+            
+            &:after {
+                content: none;
+            }
+            
+            .mejs-overlay-button:hover {
+				background: url(assets/images/play_btn_blue.png) no-repeat !important;
+				background-size: 100% !important;
+				
+				@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+					only screen and (   min--moz-device-pixel-ratio: 1.5),
+					only screen and (     -o-min-device-pixel-ratio: 3/2),
+					only screen and (        min-device-pixel-ratio: 1.5),
+					only screen and (min-resolution: 192dpi) {
+						background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+						background-size: 100% !important;
+					}
+			
+				@media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+					only screen and (   min--moz-device-pixel-ratio: 2.5),
+					only screen and (     -o-min-device-pixel-ratio: 5/2),
+					only screen and (        min-device-pixel-ratio: 2.5),
+					only screen and (min-resolution: 192dpi) {
+						background: url(assets/images/play_btn_blue_2x.png) no-repeat !important;
+						background-size: 100% !important;
+					}
+			}
         }
     }
 }
