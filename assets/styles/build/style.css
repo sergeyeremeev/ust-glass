@@ -3116,7 +3116,7 @@ object {
     border-bottom: 1px solid #e5e5e5;
   }
   .about-us-content .about-us-bottom {
-    padding: 30px 0 20px;
+    padding: 25px 0 20px;
   }
   .about-us-content h1 {
     font-size: 34px;
@@ -3355,7 +3355,10 @@ object {
   color: #242021;
 }
 .contact-form .icon-envelope {
+  width: 40px;
+  height: 22px;
   background: url(assets/images/email.png) no-repeat;
+  background-size: 100%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .contact-form .icon-envelope {
@@ -3873,6 +3876,11 @@ object {
   }
   .related-articles article p {
     display: none;
+  }
+}
+@media only screen and (width: 320px) {
+  .blog h1 {
+    font-size: 35px;
   }
 }
 .product-banner {
