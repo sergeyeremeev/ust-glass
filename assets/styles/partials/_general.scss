@@ -5,9 +5,9 @@
 *,
 :before,
 :after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -17,7 +17,7 @@
 
 html,
 body {
-	font-family: 'Open Sans';
+    font-family: 'Open Sans';
  }
 
 
@@ -26,15 +26,15 @@ body {
    ========================================================================== */
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 a,
 a:visited {
-	color: $red;
+    color: $red;
 }
 a:hover {
-	color: $blue;
+    color: $blue;
 }
 
 
@@ -43,8 +43,8 @@ a:hover {
    ========================================================================== */
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+    height: auto; /* Make sure images are scaled correctly. */
+    max-width: 100%; /* Adhere to container width. */
 }
 
 
@@ -58,20 +58,20 @@ h3 { }
 h4 { }
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
-	line-height: 1;
+    clear: both;
+    line-height: 1;
 }
 
 p {
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 blockquote {
-	margin: 0 1.5em;
+    margin: 0 1.5em;
 }
 
 address {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 
@@ -80,19 +80,19 @@ address {
    ========================================================================== */
 
 .alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
 }
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
 }
 .aligncenter {
-	clear: both;
-	display: block;
-	margin: 0 auto;
+    clear: both;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -102,29 +102,29 @@ address {
 
 /* Text meant only for screen readers */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
 }
 
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar */
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar */
 }
 
 /* ==========================================================================
@@ -142,8 +142,8 @@ address {
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
-	content: '';
-	display: table;
+    content: '';
+    display: table;
 }
 
 .clear:after,
@@ -152,7 +152,7 @@ address {
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-	clear: both;
+    clear: both;
 }
 
 
@@ -163,127 +163,127 @@ address {
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
+    display: none;
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer {
-	display: block;
+    display: block;
 }
 
 // Websymbols font
 @font-face {
-	font-family: 'WebSymbols';
-	src: url('assets/fonts/WebSymbols-Regular.otf');
+    font-family: 'WebSymbols';
+    src: url('assets/fonts/WebSymbols-Regular.otf');
 }
 
 // carousel controls
 .owl-controls {
-	position: absolute;
-	top: -45px;
-	right: 0;
+    position: absolute;
+    top: -45px;
+    right: 0;
 
     .owl-prev,
     .owl-next {
-		display: inline-block;
-		font-family: WebSymbols;
-		font-size: 20px;
-		color: #cfcdce;
-		
-		&:hover {
-			color: $blue;
-		}
-	}
-	
-	.owl-prev {
-		margin-right: 10px;
-	}
-	
-	@media only screen and (max-width: 767px) {
-		top: -37px;
-		
-		.owl-prev,
-    	.owl-next {
-			font-size: 16px;
-		}
-	}
+        display: inline-block;
+        font-family: WebSymbols;
+        font-size: 20px;
+        color: #cfcdce;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    .owl-prev {
+        margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        top: -37px;
+
+        .owl-prev,
+        .owl-next {
+            font-size: 16px;
+        }
+    }
 }
 
-input[type="text"], input[type="password"], textarea, select { 
+input[type="text"], input[type="password"], textarea, select {
   outline: none;
   -webkit-appearance: none !important;
 }
 
 .mejs-overlay-button {
-	width: 116px !important;
-	height: 116px !important;
-	margin: -58px 0 0 -58px !important;
-	background: url(assets/images/play_btn.png) no-repeat !important;
-	background-size: 100% !important;
-	
-	@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-		only screen and (   min--moz-device-pixel-ratio: 1.5),
-		only screen and (     -o-min-device-pixel-ratio: 3/2),
-		only screen and (        min-device-pixel-ratio: 1.5),
-		only screen and (min-resolution: 192dpi) {
-			background: url(assets/images/play_btn_2x.png) no-repeat !important;
-			background-size: 100% !important;
-		}
+    width: 116px !important;
+    height: 116px !important;
+    margin: -58px 0 0 -58px !important;
+    background: url(assets/images/play_btn.png) no-repeat !important;
+    background-size: 100% !important;
 
-	@media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
-		only screen and (   min--moz-device-pixel-ratio: 2.5),
-		only screen and (     -o-min-device-pixel-ratio: 5/2),
-		only screen and (        min-device-pixel-ratio: 2.5),
-		only screen and (min-resolution: 192dpi) {
-			background: url(assets/images/play_btn_3x.png) no-repeat !important;
-			background-size: 100% !important;
-		}
+    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (   min--moz-device-pixel-ratio: 1.5),
+        only screen and (     -o-min-device-pixel-ratio: 3/2),
+        only screen and (        min-device-pixel-ratio: 1.5),
+        only screen and (min-resolution: 192dpi) {
+            background: url(assets/images/play_btn_2x.png) no-repeat !important;
+            background-size: 100% !important;
+        }
+
+    @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+        only screen and (   min--moz-device-pixel-ratio: 2.5),
+        only screen and (     -o-min-device-pixel-ratio: 5/2),
+        only screen and (        min-device-pixel-ratio: 2.5),
+        only screen and (min-resolution: 192dpi) {
+            background: url(assets/images/play_btn_3x.png) no-repeat !important;
+            background-size: 100% !important;
+        }
 }
 
 @media only screen and (max-width: 767px) {
-	.mejs-overlay-button {
-		width: 63px !important;
-		height: 63px !important;
-		margin: -31px 0 0 -31px !important;
-		background: url(assets/images/play_btn.png) no-repeat !important;
-		background-size: 100% !important;
-		
-		@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-			only screen and (   min--moz-device-pixel-ratio: 1.5),
-			only screen and (     -o-min-device-pixel-ratio: 3/2),
-			only screen and (        min-device-pixel-ratio: 1.5),
-			only screen and (min-resolution: 192dpi) {
-				background: url(assets/images/play_btn_2x.png) no-repeat !important;
-				background-size: 100% !important;
-			}
-	
-		@media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
-			only screen and (   min--moz-device-pixel-ratio: 2.5),
-			only screen and (     -o-min-device-pixel-ratio: 5/2),
-			only screen and (        min-device-pixel-ratio: 2.5),
-			only screen and (min-resolution: 192dpi) {
-				background: url(assets/images/play_btn_2x.png) no-repeat !important;
-				background-size: 100% !important;
-			}
-	}
+    .mejs-overlay-button {
+        width: 63px !important;
+        height: 63px !important;
+        margin: -31px 0 0 -31px !important;
+        background: url(assets/images/play_btn.png) no-repeat !important;
+        background-size: 100% !important;
+
+        @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+            only screen and (   min--moz-device-pixel-ratio: 1.5),
+            only screen and (     -o-min-device-pixel-ratio: 3/2),
+            only screen and (        min-device-pixel-ratio: 1.5),
+            only screen and (min-resolution: 192dpi) {
+                background: url(assets/images/play_btn_2x.png) no-repeat !important;
+                background-size: 100% !important;
+            }
+
+        @media  only screen and (-webkit-min-device-pixel-ratio: 2.5),
+            only screen and (   min--moz-device-pixel-ratio: 2.5),
+            only screen and (     -o-min-device-pixel-ratio: 5/2),
+            only screen and (        min-device-pixel-ratio: 2.5),
+            only screen and (min-resolution: 192dpi) {
+                background: url(assets/images/play_btn_2x.png) no-repeat !important;
+                background-size: 100% !important;
+            }
+    }
 }
 
 .mejs-controls {
-	background: rgba(0, 0, 0, 0.5) !important;
-	height: 42px !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    height: 42px !important;
 }
 
 .mejs-currenttime-container,
 .mejs-time-rail {
-	display: none !important;
+    display: none !important;
 }
 
 .mejs-duration-container {
-	float: right !important;
-	margin-right: 20px !important;
-	padding-top: 16px !important;
+    float: right !important;
+    margin-right: 20px !important;
+    padding-top: 16px !important;
 }
 
 .mejs-button {
-	display: none !important;
+    display: none !important;
 }
