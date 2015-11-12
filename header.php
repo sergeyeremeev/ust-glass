@@ -25,45 +25,58 @@
 
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_mbbasetheme' ); ?></a>
 
-    <header id="masthead" class="site-header" role="banner">
-        <div class="header-top">
-            <div class="container">
-                <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <button class="menu-toggle"><span></span><span></span><span></span></button>
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-                    <div class="header-social">
-                        <ul>
-                            <?php
-                                $args = array('post_type' => 'social');
-                                $loop = new WP_Query( $args );
-                                while ( $loop->have_posts() ) : $loop->the_post();
-                            ?>
-                                <li><a class="fb" href="<?php the_field('facebook'); ?>"></a></li>
-                                <li><a class="twit" href="<?php the_field('twitter'); ?>"></a></li>
-                                <li><a class="google" href="<?php the_field('google-plus'); ?>"></a></li>
-                                <li><a class="youtube" href="<?php the_field('youtube'); ?>"></a></li>
-                            <?php
-                                endwhile;
-                                wp_reset_postdata();
-                            ?>
-                        </ul>
-                    </div>
-                </nav><!-- #site-navigation -->
-            </div>
-        </div><!-- .header-top -->
-        
-        <div class="header-bottom">
-            <div class="container">
-                <div class="site-branding">
-                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo"></span><?php bloginfo( 'name' ); ?></a></h1>
+    <header id="masthead" class="site-header" role="banner" data-speed="2">
+        <div class="header-content-wrapper">
+            <div class="header-top">
+                <div class="container">
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                        <button class="menu-toggle"><span></span><span></span><span></span></button>
+                        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                        <div class="header-social">
+                            <ul>
+                                <?php
+                                    $args = array('post_type' => 'social');
+                                    $loop = new WP_Query( $args );
+                                    while ( $loop->have_posts() ) : $loop->the_post();
+                                ?>
+                                    <li><a class="fb" href="<?php the_field('facebook'); ?>"></a></li>
+                                    <li><a class="twit" href="<?php the_field('twitter'); ?>"></a></li>
+                                    <li><a class="google" href="<?php the_field('google-plus'); ?>"></a></li>
+                                    <li><a class="youtube" href="<?php the_field('youtube'); ?>"></a></li>
+                                <?php
+                                    endwhile;
+                                    wp_reset_postdata();
+                                ?>
+                            </ul>
+                        </div>
+                    </nav><!-- #site-navigation -->
                 </div>
-                <div class="header-search">
-                    <div class="toggle-search">
+            </div><!-- .header-top -->
+            
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="site-branding">
+                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo"></span><?php bloginfo( 'name' ); ?></a></h1>
                     </div>
-                    <?php get_search_form(); ?>
+                    <div class="header-search">
+                        <div class="toggle-search">
+                        </div>
+                        <?php get_search_form(); ?>
+                    </div>
+                </div>
+            </div><!-- .header-bottom -->
+            
+            <?php while ( have_posts() ) : the_post(); ?>
+            <div class="home-banner-copy">
+                <div class="container">
+                    <div class="banner-content">
+                        <?php the_content(); ?>
+                        <a href="#" class="request-quote"><?php the_field('button_text'); ?></a>
+                    </div>
                 </div>
             </div>
-        </div><!-- .header-bottom -->
+            <?php endwhile; ?>
+        </div>
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">

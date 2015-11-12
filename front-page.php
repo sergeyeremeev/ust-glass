@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="home-banner" style="background: url(<?php the_field('banner_image'); ?>) no-repeat;">
+				<div class="home-banner" style="background: url(<?php the_field('banner_image'); ?>) no-repeat fixed;">
 					<div class="container">
 						<div class="banner-content">
 							<?php the_content(); ?>

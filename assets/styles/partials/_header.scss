@@ -53,6 +53,13 @@ body {
             &:first-child a {
                 border-left: 1px solid rgba(255, 255, 255, 0.2);
             }
+            
+            &#menu-item-165 a {
+                line-height: 1.2;
+                height: 72px;
+                display: block;
+                padding-top: 16px;
+            }
         }
     }
     
@@ -173,7 +180,108 @@ body {
     }
 }
 
-.home {
+.header-content-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.home-banner-copy {
+    display: none;
+    margin-top: 70px;
+    
+    .banner-content {
+    
+        h2 {
+            margin: 0 0 30px;
+            line-height: 1;
+            font-size: 60px;
+            color: #fff;
+        }
+            
+        ul {
+            margin: 0 0 25px;
+            padding: 0 0 0 30px;
+            color: #fff;
+            font-size: 22px;
+            list-style-type: none;
+            line-height: 1.8;
+            
+            li {
+                position: relative;
+                
+                &:before {
+                    content: '.';
+                    font-family: WebSymbols;
+                    font-size: 14px;
+                    color: #fff;
+                    position: absolute;
+                    left: -30px;
+                    top: 8px;
+                }
+            }
+        }
+        
+        .request-quote {
+            display: inline-block;
+            width: 300px;
+            height: 74px;
+            line-height: 74px;
+            border-radius: 5px;
+            background: $darkYellow;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 1, 0.2);
+            
+            &:hover {
+                background: $lightYellow;
+            }
+        }
+    }
+}
+
+body.home {
+    padding-top: 0;
+    
+    #masthead {
+        height: 680px;
+        background: url('assets/images/home_banner.jpg') no-repeat fixed;
+        background-position: 50% 0;
+        overflow: hidden;
+    }
+    
+    .home-banner-copy {
+        display: block;
+    }
+    
+    &.admin-bar .header-top {
+        top: 0;
+    }
+    
+    .header-top {
+        position: relative;
+    }
+    
+    &.sticky-header {
+        
+        .header-top {
+            position: fixed;
+            top: 0;
+        }
+        
+        &.admin-bar {
+            
+            .header-top {
+                top: 32px;
+            }
+        }
+    }
+}
+
+/*.home {
     padding-top: 0;
     
     .header-top {
@@ -196,7 +304,7 @@ body {
             }
         }
     }
-}
+}*/
 
 @media only screen and (max-width: 1024px) {
     
@@ -215,21 +323,38 @@ body {
         }
     }
     
+    .home-banner-copy {
+        display: none;
+        margin-top: 20px;
+        
+        .banner-content {
+        
+            h2 {
+                font-size: 50px;
+            }
+        }
+    }
+    
+    .menu-header-menu-container ul li#menu-item-165 a {
+        padding-top: 18px;
+    }
+    
     .header-bottom {
         position: relative;
         top: -15px;
     }
     
-    .home {
-        padding-top: 0;
+    body.home {
         
+        &.admin-bar .header-top {
+            top: 0;
+        }
+    
         .header-top {
             position: relative;
-            top: 0;
         }
         
         &.sticky-header {
-            padding-top: 112px;
             
             .header-top {
                 position: fixed;
@@ -257,6 +382,54 @@ body {
     
     .admin-bar .site-header {
         top: 46px;
+    }
+    
+    body.home #masthead {
+        height: 390px;
+    }
+    
+    body.home.menu-toggled #masthead {
+        overflow: visible;
+        
+        .header-content-wrapper {
+            overflow: visible;
+        }
+    }
+    
+    .home-banner-copy {
+        padding-top: 0;
+        margin-top: 0;
+        
+        .banner-content {
+            
+            h2 {
+                font-size: 30px;
+                margin-bottom: 5px;
+                line-height: 1.2
+            }
+            
+            ul {
+                margin: 0 0 15px;
+                font-size: 14px;
+                padding-left: 25px;
+                
+                li {
+                    line-height: 1.9;
+                    
+                    &:before {
+                        font-size: 12px;
+                        left: -25px;
+                        top: 3px;
+                    }
+                }
+            }
+            
+            .request-quote {
+                width: 100%;
+                height: 54px;
+                line-height: 54px;
+            }
+        }
     }
     
     .site-header {
@@ -306,6 +479,12 @@ body {
                     border-bottom: 1px solid #6f6f71;
                     height: 100%;
                     line-height: 56px;
+                }
+                
+                &#menu-item-165 a {
+                    padding-top: 0;
+                    line-height: 56px;
+                    height: 100%;
                 }
             }
         }
@@ -674,7 +853,11 @@ body {
         }
     }
     
-    .home {
+    .header-content-wrapper {
+        overflow: visible;
+    }
+    
+    body.home {
         padding-top: 0;
         
         .site-header {
@@ -683,11 +866,17 @@ body {
         }
         
         &.sticky-header {
-            padding-top: 72px;
+            padding-top: 390px;
             
             .site-header {
                 position: fixed;
                 top: 0;
+                height: 72px !important;
+                background: rgba(50, 50, 50, 0.5) !important;
+                
+                .home-banner-copy {
+                    display: none;
+                }
             }
             
             &.admin-bar {
@@ -695,6 +884,19 @@ body {
                 .site-header {
                     top: 46px;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (width: 320px) {
+    .home-banner-copy {
+        
+        .banner-content {
+            
+            h2 {
+                font-size: 22px;
+                margin-bottom: 10px;
             }
         }
     }

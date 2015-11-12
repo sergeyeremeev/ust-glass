@@ -325,12 +325,20 @@
 	$(document).on('click', '.menu-toggle', function () {
 		$('.header-bottom').toggleClass('hidden');
 		$('.header-top').toggleClass('shifted');
+		$('body').toggleClass('menu-toggled');
 	});
 	
 	$('.get-a-quote').on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({
         	scrollTop: $('.quote-section').offset().top - 105
+		}, 'slow');
+	});
+	
+	$('.request-quote').on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({
+        	scrollTop: $('.quote-section').offset().top - 104
 		}, 'slow');
 	});
 	
@@ -351,7 +359,7 @@
 	
 	
 	// homepage sticky header functionality
-	if ($('body').hasClass('home')) {
+	/*if ($('body').hasClass('home')) {
 		bannerHeight = $('.home-banner').height();
 		$(document).on('scroll', function () {
 			if ($(document).width() >= 768) {
@@ -368,5 +376,49 @@
 				}
 			}
 		});
-	}
+	}*/
+	
+	// parallax header
+	$(document).ready(function () {
+
+		var $window = $(window);
+		
+		if ($('body').hasClass('home')) {
+			$('#masthead').each(function(){
+				var $bgobj = $(this); // assigning the object
+				$(window).scroll(function() {
+					if ($(document).width() >= 768) {
+						if ($window.scrollTop() <= 680) {
+							$('body').removeClass("sticky-header");
+							var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+							// Put together our final background position
+							var coords = '50% '+ yPos + 'px';
+							var contentCoords = -yPos + 'px';
+							// Move the background
+							$bgobj.css({ backgroundPosition: coords });
+							$('.header-content-wrapper').css('top', contentCoords);
+						} else {
+							$('.header-content-wrapper').css('top', '0px');
+							$('body').addClass("sticky-header");
+						}
+					} else {
+						if ($window.scrollTop() <= 390) {
+							$('body').removeClass("sticky-header");
+							var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+							// Put together our final background position
+							var coords = '50% '+ yPos + 'px';
+							var contentCoords = -yPos + 'px';
+							// Move the background
+							$bgobj.css({ backgroundPosition: coords });
+							$('.header-content-wrapper').css('top', contentCoords);
+						} else {
+							$('.header-content-wrapper').css('top', '0px');
+							$('body').addClass("sticky-header");
+						}
+					}
+				});
+			});
+		}
+	});
+	
 })(jQuery);

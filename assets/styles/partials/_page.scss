@@ -19,11 +19,16 @@
 		margin-bottom: 20px;
 	}
 	
-	p {
+	p,
+	ul {
 		color: #666;
 		font-size: 16px;
 		font-family: Arial;
-		line-heght: 1.5;
+		line-height: 1.5;
+	}
+	
+	ul {
+		padding-left: 20px;
 	}
 }
 
@@ -94,7 +99,8 @@
 			}
 		}
 		
-		p {
+		p,
+		ul {
 			font-size: 18px;
 			line-height: 1.5;
 			font-family: Arial;
@@ -214,13 +220,14 @@
 		font-size: 24px;
 	}
 	
-	p {
+	p,
+	ul {
 		font-size: 18px;
 		color: #666;
 		margin: 25px 0;
 		font-family: Arial;
 		line-height: 1.8;
-		
+				
 		img {
 			margin: 10px 20px 10px 0;
 		}
@@ -319,7 +326,8 @@
 			margin: 5px 0 50px;
 		}
 		
-		p {
+		p,
+		ul {
 			font-size: 14px;
 			line-height: 1.6;
 		}
@@ -349,7 +357,8 @@
 				font-size: 16px;
 			}
 			
-			p {
+			p,
+			ul {
 				font-size: 16px;
 				line-height: 1.6;
 			}
@@ -373,7 +382,8 @@
 			font-size: 16px;
 		}
 		
-		p {
+		p,
+		ul {
 			font-size: 16px;
 			line-height: 1.6;
 		}
@@ -394,10 +404,11 @@
 			font-size: 20px;
 		}
 		
-		p {
+		p,
+		ul {
 			font-size: 14px;
 			margin: 15px 0;
-			
+						
 			img {
 				margin: 10px 20px 10px 0;
 			}

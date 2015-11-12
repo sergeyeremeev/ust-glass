@@ -1158,6 +1158,12 @@ body {
 .header-top ul li:first-child a {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
+.header-top ul li#menu-item-165 a {
+  line-height: 1.2;
+  height: 72px;
+  display: block;
+  padding-top: 16px;
+}
 .header-top .header-social {
   display: none;
 }
@@ -1257,24 +1263,110 @@ body {
   }
 }
 
-.home {
+.header-content-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.home-banner-copy {
+  display: none;
+  margin-top: 70px;
+}
+.home-banner-copy .banner-content h2 {
+  margin: 0 0 30px;
+  line-height: 1;
+  font-size: 60px;
+  color: #fff;
+}
+.home-banner-copy .banner-content ul {
+  margin: 0 0 25px;
+  padding: 0 0 0 30px;
+  color: #fff;
+  font-size: 22px;
+  list-style-type: none;
+  line-height: 1.8;
+}
+.home-banner-copy .banner-content ul li {
+  position: relative;
+}
+.home-banner-copy .banner-content ul li:before {
+  content: '.';
+  font-family: WebSymbols;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  left: -30px;
+  top: 8px;
+}
+.home-banner-copy .banner-content .request-quote {
+  display: inline-block;
+  width: 300px;
+  height: 74px;
+  line-height: 74px;
+  border-radius: 5px;
+  background: #ffba00;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 1, 0.2);
+}
+.home-banner-copy .banner-content .request-quote:hover {
+  background: #ffc322;
+}
+
+body.home {
   padding-top: 0;
 }
-.home .header-top {
-  position: relative;
+body.home #masthead {
+  height: 680px;
+  background: url("assets/images/home_banner.jpg") no-repeat fixed;
+  background-position: 50% 0;
+  overflow: hidden;
+}
+body.home .home-banner-copy {
+  display: block;
+}
+body.home.admin-bar .header-top {
   top: 0;
 }
-.home.sticky-header {
-  padding-top: 112px;
+body.home .header-top {
+  position: relative;
 }
-.home.sticky-header .header-top {
+body.home.sticky-header .header-top {
   position: fixed;
   top: 0;
 }
-.home.sticky-header.admin-bar .header-top {
+body.home.sticky-header.admin-bar .header-top {
   top: 32px;
 }
 
+/*.home {
+    padding-top: 0;
+    
+    .header-top {
+        position: relative;
+        top: 0;
+    }
+    
+    &.sticky-header {
+        padding-top: 112px;
+        
+        .header-top {
+            position: fixed;
+            top: 0;
+        }
+        
+        &.admin-bar {
+            
+            .header-top {
+                top: 32px;
+            }
+        }
+    }
+}*/
 @media only screen and (max-width: 1024px) {
   body {
     padding-top: 124px;
@@ -1288,26 +1380,34 @@ body {
     padding: 0;
   }
 
+  .home-banner-copy {
+    display: none;
+    margin-top: 20px;
+  }
+  .home-banner-copy .banner-content h2 {
+    font-size: 50px;
+  }
+
+  .menu-header-menu-container ul li#menu-item-165 a {
+    padding-top: 18px;
+  }
+
   .header-bottom {
     position: relative;
     top: -15px;
   }
 
-  .home {
-    padding-top: 0;
-  }
-  .home .header-top {
-    position: relative;
+  body.home.admin-bar .header-top {
     top: 0;
   }
-  .home.sticky-header {
-    padding-top: 112px;
+  body.home .header-top {
+    position: relative;
   }
-  .home.sticky-header .header-top {
+  body.home.sticky-header .header-top {
     position: fixed;
     top: 0;
   }
-  .home.sticky-header.admin-bar .header-top {
+  body.home.sticky-header.admin-bar .header-top {
     top: 46px;
   }
 }
@@ -1322,6 +1422,45 @@ body {
 
   .admin-bar .site-header {
     top: 46px;
+  }
+
+  body.home #masthead {
+    height: 390px;
+  }
+
+  body.home.menu-toggled #masthead {
+    overflow: visible;
+  }
+  body.home.menu-toggled #masthead .header-content-wrapper {
+    overflow: visible;
+  }
+
+  .home-banner-copy {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .home-banner-copy .banner-content h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+  .home-banner-copy .banner-content ul {
+    margin: 0 0 15px;
+    font-size: 14px;
+    padding-left: 25px;
+  }
+  .home-banner-copy .banner-content ul li {
+    line-height: 1.9;
+  }
+  .home-banner-copy .banner-content ul li:before {
+    font-size: 12px;
+    left: -25px;
+    top: 3px;
+  }
+  .home-banner-copy .banner-content .request-quote {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
   }
 
   .site-header {
@@ -1371,6 +1510,11 @@ body {
     border-bottom: 1px solid #6f6f71;
     height: 100%;
     line-height: 56px;
+  }
+  .menu-header-menu-container ul li#menu-item-165 a {
+    padding-top: 0;
+    line-height: 56px;
+    height: 100%;
   }
 
   .main-navigation.toggled .menu-header-menu-container {
@@ -1676,22 +1820,37 @@ body {
     height: 50px;
   }
 
-  .home {
+  .header-content-wrapper {
+    overflow: visible;
+  }
+
+  body.home {
     padding-top: 0;
   }
-  .home .site-header {
+  body.home .site-header {
     top: 0;
     position: relative;
   }
-  .home.sticky-header {
-    padding-top: 72px;
+  body.home.sticky-header {
+    padding-top: 390px;
   }
-  .home.sticky-header .site-header {
+  body.home.sticky-header .site-header {
     position: fixed;
     top: 0;
+    height: 72px !important;
+    background: rgba(50, 50, 50, 0.5) !important;
   }
-  .home.sticky-header.admin-bar .site-header {
+  body.home.sticky-header .site-header .home-banner-copy {
+    display: none;
+  }
+  body.home.sticky-header.admin-bar .site-header {
     top: 46px;
+  }
+}
+@media only screen and (width: 320px) {
+  .home-banner-copy .banner-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 }
 /* ==========================================================================
@@ -2223,10 +2382,10 @@ object {
    Home Page Template
    ========================================================================== */
 .home-banner {
+  display: none;
   height: 680px;
   background-repeat: no-repeat;
   background-size: cover !important;
-  background-position: center !important;
   position: relative;
   top: -195px;
   margin-bottom: -195px;
@@ -2775,7 +2934,7 @@ object {
     height: 630px;
     top: -207px;
     margin-bottom: -207px;
-    padding-top: 255px;
+    padding-top: 210px;
   }
   .home-banner .banner-content h2 {
     font-size: 45px;
@@ -2820,11 +2979,11 @@ object {
     height: 390px;
     top: -72px;
     margin-bottom: -72px;
-    padding-top: 100px;
+    padding-top: 80px;
   }
   .home-banner .banner-content h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 5px;
     line-height: 1.2;
   }
   .home-banner .banner-content ul {
@@ -3084,7 +3243,11 @@ object {
 
 @media only screen and (width: 320px) {
   .home-banner {
-    padding-top: 80px;
+    padding-top: 85px;
+  }
+  .home-banner .banner-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 }
 .top-banner {
@@ -3718,11 +3881,15 @@ object {
   border-top: 1px solid #dedede;
   margin-bottom: 20px;
 }
-.page-content p {
+.page-content p,
+.page-content ul {
   color: #666;
   font-size: 16px;
   font-family: Arial;
-  line-heght: 1.5;
+  line-height: 1.5;
+}
+.page-content ul {
+  padding-left: 20px;
 }
 
 .blog h1,
@@ -3789,7 +3956,9 @@ object {
   color: #0098d5;
 }
 .blog article p,
-.related-articles article p {
+.blog article ul,
+.related-articles article p,
+.related-articles article ul {
   font-size: 18px;
   line-height: 1.5;
   font-family: Arial;
@@ -3891,14 +4060,16 @@ object {
 .post-page-content h2 {
   font-size: 24px;
 }
-.post-page-content p {
+.post-page-content p,
+.post-page-content ul {
   font-size: 18px;
   color: #666;
   margin: 25px 0;
   font-family: Arial;
   line-height: 1.8;
 }
-.post-page-content p img {
+.post-page-content p img,
+.post-page-content ul img {
   margin: 10px 20px 10px 0;
 }
 .post-page-content strong {
@@ -3964,7 +4135,8 @@ object {
     color: #fff;
     margin: 5px 0 50px;
   }
-  .page-content p {
+  .page-content p,
+  .page-content ul {
     font-size: 14px;
     line-height: 1.6;
   }
@@ -3988,7 +4160,8 @@ object {
     color: #242021;
     font-size: 16px;
   }
-  .blog article p {
+  .blog article p,
+  .blog article ul {
     font-size: 16px;
     line-height: 1.6;
   }
@@ -4006,7 +4179,8 @@ object {
   .post-content h1 {
     font-size: 16px;
   }
-  .post-content p {
+  .post-content p,
+  .post-content ul {
     font-size: 16px;
     line-height: 1.6;
   }
@@ -4023,11 +4197,13 @@ object {
   .post-page-content h2 {
     font-size: 20px;
   }
-  .post-page-content p {
+  .post-page-content p,
+  .post-page-content ul {
     font-size: 14px;
     margin: 15px 0;
   }
-  .post-page-content p img {
+  .post-page-content p img,
+  .post-page-content ul img {
     margin: 10px 20px 10px 0;
   }
   .post-page-content .addtoany_header {
